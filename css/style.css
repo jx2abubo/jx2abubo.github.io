@@ -374,7 +374,7 @@ a{
   text-align: center;
 }
 
-#pageH{
+.pageH{
   position: relative;
   margin: 0 auto;
     margin-top: 50px;
