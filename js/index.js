@@ -350,7 +350,7 @@ function replayAnimation(){
   });
   
     $home.click();
-
+    $next.hide();
   var toScroll = 0;
   var scrollSensitivity = 2;
   $(document).on("wheel", function(event){
