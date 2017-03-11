@@ -423,13 +423,13 @@ function replayAnimation(){
   $ironContainer.on('mousedown touchstart', function(e){
     startX = $ironHolder.offset().left;
     startY = $ironHolder.offset().top;
-    clientX = e.clientX || e.touches[0].clientX;
-    clientY = e.clientY || e.touches[0].clientY;
+    clientX = e.clientX;
+    clientY = e.clientY;
     magnetOn = true;
  $ironHolder.css("transform", "translateX(" + (clientX - startX) + "px) translateY(" + (clientY - startY) + "px) rotate(" + rotateNum1 + "deg) rotateX(" + rotateNum2 +"deg)");
   });
     
-  $ide.on("mousemove touchmove", function(e){
+  $(document).on("mousemove touchmove", function(e){
     rotateNum1 = Math.floor(Math.random() * 360);
     rotateNum2 = Math.floor(Math.random() * 360);
     clientX = e.clientX || e.touches[0].clientX;
@@ -439,7 +439,7 @@ function replayAnimation(){
  $ironHolder.css("transform", "translateX(" + (clientX - startX) + "px) translateY(" + (clientY - startY) + "px) rotateY(" + rotateNum1 + "deg) rotateX(" + rotateNum2 +"deg)");
     }
   });
-  $(window).on("mouseup touchend", function(e){
+  $(document).on("mouseup touchend", function(e){
     magnetOn = false;
     $ironHolder.css("transition", "");
  $ironHolder.css("transform", "");
