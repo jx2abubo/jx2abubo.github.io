@@ -18,7 +18,7 @@
 <link id=styleSwap rel="stylesheet" href="#">
 </head>
 
-<body ng-app="portfolioApp" ng-controller="portfolioControl">
+<body data-ng-app="portfolioApp" data-ng-controller="portfolioControl">
 
  <div id=nextPage>
    <h2><span class="glyphicon glyphicon-chevron-right"></span></h2></div>
@@ -94,7 +94,7 @@
         <div id=projectPage>
           <canvas id=doodle2></canvas>
           <h1 class=pageH>FreeCodeCamp Projects</h1>
-          <div class='imageBox' ng-repeat="project in projectList">
+          <div class='imageBox' data-ng-repeat="project in projectList">
             <img src={{project.image}} class=img-responsive>
             <div class=projDesc><h3>{{project.name}}</h3><p>{{project.description}}<br> <a href={{project.link}} style="text-decoration: underline; font-weight: bold;" target="_blank">{{project.linkText}}</a></p></div>
           </div>
