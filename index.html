@@ -21,9 +21,9 @@
 <body ng-app="portfolioApp" ng-controller="portfolioControl">
 
  <div id=nextPage>
-    <h2><span class="glyphicon glyphicon-chevron-right"</h2></div>
+   <h2><span class="glyphicon glyphicon-chevron-right"></span></h2></div>
   <div id=previousPage>
-    <h2><span class="glyphicon glyphicon-chevron-left"</h2></div>
+    <h2><span class="glyphicon glyphicon-chevron-left"><?/span></h2></div>
     <div id=footer><small>Designed and coded by me, Jacob Abubo. Copyright 2017.</small></div>
   <header id=header>
     <div class=container>
@@ -49,7 +49,7 @@
 
         <li><a href=#><span id=navTheme title='Theme' class='glyphButton glyphicon glyphicon-play'></span></a></li>
         <li>
-          <a href=#><span id=navContact title=Contact class='glyphButton glyphicon glyphicon-envelope' </span></a>
+          <a href=#><span id=navContact title=Contact class='glyphButton glyphicon glyphicon-envelope'></span></a>
         </li>
 
 
@@ -68,25 +68,24 @@
               <div id=leftShutter></div>
               <div id=rightShutter></div>
               <h1 id=homeMessage>Aspiring <span id=ninja>ninja</span> front-end  developer on a mission to: <br>
-        <div class=row>
-                    <div class=col-xs-12>
+        <span class=row>
+                    <span class=col-xs-12>
       <span id=challenge>Tackle&nbsp;challenges</span>
-          </div>
-                  <div class=col-xs-12>
+          </span>
+                  <span class=col-xs-12>
           <span><span id=inno>Inno</span><span id=vate>vate&nbsp;&nbsp;</span></span>
-          </div>
+          </span>
           
-          <div class=col-xs-12>
+          <span class=col-xs-12>
         <span id=learn>&nbsp;&nbsp;&nbsp;</span>
             <span id=sideCaret>&#17;</span>
-          </div>
+          </span>
           
 
 
           </h1></div>
 
           </div>
-        </p>
       </div>
 
 
@@ -96,7 +95,7 @@
           <h1 id=pageH>FreeCodeCamp Projects</h1>
           <div class='imageBox' ng-repeat="project in projectList">
             <img src={{project.image}} class=img-responsive>
-            <span class=projDesc><h3>{{project.name}}</h3><p>{{project.description}}<br> <a href={{project.link}} style="text-decoration: underline; font-weight: bold;" target="_blank">{{project.linkText}}</a></p></span>
+            <div class=projDesc><h3>{{project.name}}</h3><p>{{project.description}}<br> <a href={{project.link}} style="text-decoration: underline; font-weight: bold;" target="_blank">{{project.linkText}}</a></p></div>
           </div>
 
          
