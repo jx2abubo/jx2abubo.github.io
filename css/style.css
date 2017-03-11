@@ -327,6 +327,7 @@ ul {
   text-align: center;
 }
 #projectPage{
+   text-align: center;
 }
 
 .imageBox{
@@ -357,7 +358,7 @@ img{
   background-color: white;
   width: 97vw;
   height: auto;
-  padding-leftt: 3vw;
+  padding-left: 3vw;
   padding-right: 3vw;
 }
 
@@ -372,7 +373,6 @@ a{
   position: relative;
   font-size: 1.5vw;
   display: none;
-  text-align: center;
 }
 
 .pageH{
