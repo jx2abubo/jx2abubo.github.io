@@ -41,8 +41,6 @@ $(document).ready(function() {
   ///initialize functions defined bottom of page
   var startDoodle;
   var animateShutter;
-  var large = true;
-  
   ////////////Project Page 
   var $projDesc = $(".projDesc");
   $("*").dblclick(function(e) {
@@ -144,9 +142,7 @@ $(document).ready(function() {
         setTimeout(function() {
           $learn.html("Learn");
           $ideCaret.hide();
-          if(large){
             $("#replay").show();
-          }
           if(currentPage == "home")
           {
             $next.show();
@@ -208,20 +204,15 @@ function replayAnimation(){
     $navigation.show();
     $projDesc.css("font-size", "2.5vw");
     $un.css("animation", "0");
-    $ironContainer.hide();
     $imageBox.css("transition", "none");
-    large = false;
-    $carousel.css("transition", "transform 0s");
   }
 
   $(window).on("resize", function() {
     if ($(window).width() < 700) {
-      large = false;
       $header.hide();
       $navigation.show();
       $projDesc.css("font-size", "2.5vw");
     } else {
-      large = true;
       $header.show();
       $navigation.hide();
       $projDesc.css("font-size", "");
@@ -427,31 +418,35 @@ function replayAnimation(){
   var rotateNum2 = 0;
   var startX;
   var startY;
-  $ironContainer.on('mousedown', function(e){
+  var clientX;
+  var clientY;
+  $ironContainer.on('mousedown touchstart', function(e){
     startX = $ironHolder.offset().left;
     startY = $ironHolder.offset().top;
+    clientX = e.clientX || e.touches[0].clientX;
+    clientY = e.clientY || e.touches[0].clientY;
     magnetOn = true;
- $ironHolder.css("transform", "translateX(" + (e.clientX - startX) + "px) translateY(" + (e.clientY - startY) + "px) rotate(" + rotateNum1 + "deg) rotateX(" + rotateNum2 +"deg)");
+ $ironHolder.css("transform", "translateX(" + (clientX - startX) + "px) translateY(" + (clientY - startY) + "px) rotate(" + rotateNum1 + "deg) rotateX(" + rotateNum2 +"deg)");
   });
     
-  $ide.on("mousemove", function(e){
+  $ide.on("mousemove touchmove", function(e){
     rotateNum1 = Math.floor(Math.random() * 360);
     rotateNum2 = Math.floor(Math.random() * 360);
+    clientX = e.clientX || e.touches[0].clientX;
+    clientY = e.clientY || e.touches[0].clientY;
     if(magnetOn){
           $ironHolder.css("transition", "all .15s ease-in");
- $ironHolder.css("transform", "translateX(" + (e.clientX - startX) + "px) translateY(" + (e.clientY - startY) + "px) rotateY(" + rotateNum1 + "deg) rotateX(" + rotateNum2 +"deg)");
+ $ironHolder.css("transform", "translateX(" + (clientX - startX) + "px) translateY(" + (clientY - startY) + "px) rotateY(" + rotateNum1 + "deg) rotateX(" + rotateNum2 +"deg)");
     }
   });
-  $(window).on("mouseup", function(e){
+  $(window).on("mouseup touchend", function(e){
     magnetOn = false;
     $ironHolder.css("transition", "");
  $ironHolder.css("transform", "");
   });
 };
   
-  if(large){
     startMagnet();
-           }
 });
 
 var app = angular.module("portfolioApp", []);
