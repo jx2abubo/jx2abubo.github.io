@@ -1,0 +1,363 @@
+body {
+  font-family: "coming soon";
+  overflow: hidden!important;
+  cursor: url('http://www.rw-designer.com/cursor-view/67856.png'), auto;
+      -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+#loading{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000000000;
+  background-color: gray;
+  animation: verticalClap 5s forwards;
+}
+
+@keyframes verticalClap{
+  0%{
+  border-top: 0 solid black;
+  border-bottom: 0 solid black;
+  }
+  25%{
+          border-top: 100vh solid black;
+  border-bottom: 100vh solid black;
+  }
+  50%{
+          border-top: 100vh solid black;
+  border-bottom: 100vh solid black;
+    
+  }
+  75%{
+          border-top: 100vh solid black;
+  border-bottom: 100vh solid black;
+  }
+  100%{
+  border-top: 0vh solid black;
+  border-bottom: 0vh solid black;
+  }
+}
+p{
+  font-color: white;
+}
+#nerdragon {
+  width: 20%;
+  height: 20%;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+#header {
+  background-color: skyblue;
+  height: 50;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+#nextPage {
+  position: absolute;
+  background-color: transparent;
+  top: 50vh;
+  display: inline-block;
+  right: 1vw;
+  z-index: 500;
+  transition: animation 2s ease;
+  animation: growIn 2s forwards;
+}
+#previousPage {
+  position: absolute;
+  background-color: transparent;
+  top: 50vh;
+  display: inline-block;
+  left: 1vw;
+  z-index: 500;
+  transition: animation 2s ease;
+  animation: growIn 2s forwards;
+}
+
+.glyphicon-chevron-right:active {
+  transform: translateX(5px);
+}
+.glyphicon-chevron-left:active {
+  transform: translateX(-5px);
+}
+
+@keyframes growIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+  background-color: none;
+  color: green;
+}
+
+
+#links {
+  width: auto;
+  right: 5%;
+  top: 1%;
+  position: absolute;
+  transform: scale(1.2);
+}
+
+#ninja {
+  text-decoration: line-through;
+}
+
+li {
+  float: left;
+  display: inline-block;
+}
+
+ul {
+  position: relative;
+  right: 10%;
+  top: 0;
+  display: block;
+  float: right;
+}
+
+#navbarHead{
+  width: 100vw;
+  position: fixed;
+  top: 0;
+ z-index: 500;
+}
+
+#navigation {
+  padding-right: 10px;
+  text-align: center;
+  background-color: skyblue;
+  border-color: none;
+
+}
+
+.glyphButton {
+  color: white;
+  font-size: 1.5em;
+}
+
+#home,
+#project,
+#theme,
+#contact {
+  position: inline;
+  color: white;
+  border-radius: 10%;
+  border-color: black;
+  border:none!important;
+  /*
+  box-shadow: 2px 2px 1px 1px silver;
+  box-shadow:none!important;*/
+  background-color: transparent;
+  transition: background-color .12s ease-in-out;
+}
+
+#home:hover,
+#project:hover,
+#theme:hover,
+#contact:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
+
+#home:focus,
+#project:focus,
+#theme:focus,
+#contact:focus {
+  outline: none!important;
+  outline-color: white!important;
+  transform: scale(1.1);
+}
+
+.activeGlyph{
+  transform: translateY(1vh);
+}
+
+.active {
+  background-color: white!important;
+  color: black!important;
+  color: black;
+}
+
+#sideCaret {
+  display: inline-block;
+  transform: scale(0.6);
+  animation: blink 1s infinite;
+  color: darkgreen;
+}
+
+@keyframes blink {
+  0% {
+    color: lightgreen;
+  }
+  70% {
+    color: darkgreen;
+  }
+}
+
+#home:active,
+#project:active,
+#theme:active,
+#contact:active {
+  outline: none!important;
+  box-shadow: 0px 0px 0px 0px black;
+}
+
+#homePage {
+  display: inline;
+  position: relative;
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
+}
+
+#messageBox {
+  position: relative;
+  color: white;
+  background-color: transparent;
+  margin-top: 100px;
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+#leftShutter {
+  transform-origin: 0% 0%;
+  z-index: 500;
+  position: absolute;
+  Left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: solid cyan;
+  border-right: solid transparent;
+}
+
+#rightShutter {
+  transform-origin: 100% 100%;
+  z-index: 500;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: solid cyan;
+  border-left: solid transparent;
+}
+
+#homeMessage {
+  opacity: 1;
+}
+
+@keyframes animateShutter {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.cc {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  perspective: 10000000px;
+  -webkit-perspective: 10000000px;
+}
+
+
+
+.side {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-left: .5vw;
+  padding-right: .5vw;
+  border: 0.5vw solid;
+  border-left-color: salmon;
+  border-right-color: yellow;
+  border-top: none;
+  border-bottom: none;
+  background-color: #E6DD93;
+  color: black;
+}
+
+
+#pageH{
+  position: relative;
+  margin: 0 auto;
+    margin-top: 50px;
+  transition: margin-top .5s ease;
+  font-size: 36px;
+  text-align: center;
+  color: white;
+}
+
+
+
+#doodleMe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.theme{
+  position: relative;
+  margin: 0 auto;
+  display:inline;
+  background-color: white;
+  font-size: 1.5em;
+}
+
+#c1 {
+  transform: rotateY(0deg) translateZ(50vw);
+
+}
+
+#c2 {
+  transform: rotateY(89.999deg) translateZ(50vw);
+}
+
+#c3 {
+  text-align: center;
+  transform: rotateY(180deg) translateZ(50vw);
+}
+
+#c4 {
+  transform: rotateY(269.999deg) translateZ(50vw);
+}
+
+#clearPaint{
+    position: absolute;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+    animation: rotatePaint 3s;
+  display: inline;
+}
