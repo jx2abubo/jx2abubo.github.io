@@ -87,13 +87,13 @@ $(document).ready(function() {
 
   $ninja.on("click", function() {
     $canvas.hide();
-    styleSwap("http://codepen.io/jx2bandito/pen/RpRJmw.css");
+    styleSwap("css/ninja.css");
   });
 
   $doodle.on("click", function() {
     $canvas.show();
     $clearPaint.click();
-    styleSwap("http://codepen.io/jx2bandito/pen/BWNzBq.css");
+    styleSwap("css/doodle.css");
   });
   $doodle.one("click", function(){
     startDoodle("doodle1");
@@ -105,12 +105,12 @@ $(document).ready(function() {
   
   $magnet.on("click", function() {
     $canvas.hide();
-    styleSwap("http://codepen.io/jx2bandito/pen/JWdbBX.css");
+    styleSwap("css/magnet.css");
   });
 
   $beach.on("click", function(){
     $canvas.hide();
-    styleSwap("http://codepen.io/jx2bandito/pen/bqBZdd.css")
+    styleSwap("css/beach.css")
   });
   
   
