@@ -104,6 +104,7 @@ $(document).ready(function() {
 
   
   $magnet.on("click", function() {
+    alert("True");
     $canvas.hide();
     styleSwap("css/magnet.css");
   });
