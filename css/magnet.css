@@ -1,0 +1,393 @@
+
+body {
+  font-family: audiowide;
+  overflow: hidden!important;
+    -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+#loading{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000000000;
+  background-color: gray;
+  animation: verticalClap 2s forwards;
+}
+
+@keyframes verticalClap{
+  0%{
+  border-top: 0 solid black;
+  border-bottom: 0 solid black;
+  }
+  25%{
+          border-top: 100vh solid black;
+  border-bottom: 100vh solid black;
+  }
+  50%{
+          border-top: 100vh solid black;
+  border-bottom: 100vh solid black;
+    
+  }
+  75%{
+          border-top: 100vh solid black;
+  border-bottom: 100vh solid black;
+  }
+  100%{
+  border-top: 0vh solid black;
+  border-bottom: 0vh solid black;
+  }
+}
+p{
+  font-color: white;
+}
+#nerdragon {
+  width: 20%;
+  height: 20%;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+#header {
+  background-color: red;
+  height: 50px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+#nextPage {
+  position: absolute;
+  background-color: transparent;
+  top: 50vh;
+  display: inline-block;
+  right: 1vw;
+  z-index: 500;
+  transition: animation 2s ease;
+  animation: growIn 2s forwards;
+}
+#previousPage {
+  position: absolute;
+  background-color: transparent;
+  top: 50vh;
+  display: inline-block;
+  left: 1vw;
+  z-index: 500;
+  transition: animation 2s ease;
+  animation: growIn 2s forwards;
+}
+
+.glyphicon-chevron-right:active {
+  transform: translateX(5px);
+}
+.glyphicon-chevron-left:active {
+  transform: translateX(-5px);
+}
+
+@keyframes growIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+  background-color: none;
+  color: gray;
+}
+
+
+#links {
+  width: auto;
+  right: 5%;
+  top: 1%;
+  position: absolute;
+  transform: scale(1.2);
+}
+
+#ninja {
+  text-decoration: line-through;
+}
+
+li {
+  float: left;
+  display: inline-block;
+}
+
+ul {
+  position: relative;
+  right: 10%;
+  top: 0;
+  display: block;
+  float: right;
+}
+
+#navbarHead{
+  width: 100vw;
+  position: fixed;
+  top: 0;
+ z-index: 500;
+}
+
+#navigation {
+  padding-right: 10px;
+  text-align: center;
+  background-color: red;
+  border-color: black;
+
+}
+
+.glyphButton {
+  color: white;
+  font-size: 1.5em;
+}
+
+#home,
+#project,
+#theme,
+#contact {
+  position: inline;
+  color: white;
+  border-radius: 10%;
+  border-color: black;
+  border:none!important;
+  /*box-shadow: 2px 2px 1px 1px silver;
+  box-shadow:none!important;*/
+  background-color: transparent;
+  transition: background-color .12s ease-in-out;
+}
+
+#home:hover,
+#project:hover,
+#theme:hover,
+#contact:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
+
+#home:focus,
+#project:focus,
+#theme:focus,
+#contact:focus {
+  outline: none!important;
+  outline-color: white!important;
+  transform: scale(1.1);
+}
+
+.activeGlyph{
+  transform: translateY(1vh);
+}
+
+.active {
+  background-color: white!important;
+  color: black!important;
+  color: black;
+}
+
+#sideCaret {
+  display: inline-block;
+  transform: scale(0.6);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: gray;
+  }
+  70% {
+    color: darkgray;
+  }
+}
+
+#home:active,
+#project:active,
+#theme:active,
+#contact:active {
+  outline: none!important;
+  box-shadow: 0px 0px 0px 0px black;
+}
+
+#messageBox {
+  position: relative;
+  color: black;
+  background-color: transparent;
+  margin-top: 100px;
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+#leftShutter {
+  transform-origin: 0% 0%;
+  z-index: 500;
+  position: absolute;
+  Left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: solid #0d0d0d;
+  border-right: solid transparent;
+}
+
+#rightShutter {
+  transform-origin: 100% 100%;
+  z-index: 500;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: solid #0d0d0d;
+  border-left: solid transparent;
+}
+
+#homeMessage {
+  opacity: 1;
+}
+
+@keyframes animateShutter {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.cc {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  perspective: 10000000px;
+  -webkit-perspective: 10000000px;
+}
+
+#pageH{
+  position: relative;
+  margin: 0 auto;
+    margin-top: 50px;
+  transition: margin-top .5s ease;
+  font-size: 36px;
+  text-align: center;
+  color: blue;
+}
+
+
+.side {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: .5vw solid silver;
+  border-top: none;
+  border-bottom: none;
+  background-color: #d7d7c1;
+  color: blue;
+}
+
+
+
+
+
+
+#c1 {
+  transform: rotateY(0deg) translateZ(50vw);
+
+}
+
+#c2 {
+  transform: rotateY(89.999deg) translateZ(50vw);
+}
+
+#c3 {
+  text-align: center;
+  transform: rotateY(180deg) translateZ(50vw);
+}
+
+#c4 {
+  transform: rotateY(269.999deg) translateZ(50vw);
+}
+
+#ironContainer{
+  perspective: 10000px;
+  width: 20vw;
+  height: 20vw;
+  background-color: transparent;
+  display: inline-block;
+      position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+}
+.iron{
+  text-align: center;
+  font-size: 1vw;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 10vw;
+  /*transform: translate3d(150px, 150px, 0);*/
+  border: .2vw solid black;
+    transform-origin: center;
+  transition: all .5s cubic-bezier(.99,.4,.73,.36);
+  background-color: slategray;
+}
+
+#iron1{
+  transform: rotateY(0deg) translateZ(5vw);
+}
+#iron2{
+  transform: rotateY(90deg) translateZ(5vw);
+}
+#iron3{
+  transform: rotateY(180deg) translateZ(5vw);
+}
+#iron4{
+  transform: rotateY(270deg) translateZ(5vw);
+}
+#iron5{
+  transform: rotateX(90deg) translateZ(5vw);
+}
+
+#iron6{
+  transform: rotateX(-90deg) translateZ(5vw);
+}
+#ironHolder{
+    position: relative;
+  display: block;
+  top: 10vw;
+  background-color: transparent;
+  -webkit-transform: translate3d(0, 0 , 0);
+    transform-origin: 0 0;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+  transition: all .5s cubic-bezier(.99,.4,.73,.36);
+  width: 10vw;
+  height: 10vw;
+}
+
+#contactMessage {
+  position: relative;
+  color: black;
+  background-color: transparent;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  box-shadow: 0 0 10px black;
+  font-size: 1.8vw;
+}
