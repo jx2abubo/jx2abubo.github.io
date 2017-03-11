@@ -370,6 +370,7 @@ a{
 .projDesc{
   position: relative;
   font-size: 1.5vw;
+  display: none;
 }
 
 #pageH{
