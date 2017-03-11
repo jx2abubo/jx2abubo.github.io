@@ -98,6 +98,7 @@ h1 {
 .glyphicon-chevron-right, .glyphicon-chevron-left {
   background-color: none;
   color: black;
+  font-size: 2em;
 }
 
 
