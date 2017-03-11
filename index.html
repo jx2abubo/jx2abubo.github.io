@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Current</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <html>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Bahiana" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<!--Used to change theme-->
+<link id=styleSwap rel="stylesheet" href="#">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google" content="notranslate" />
+  <title>Portfolio</title>
+</head>
+
+<body ng-app="portfolioApp" ng-controller="portfolioControl">
+
+ <div id=nextPage>
+    <h2><span class="glyphicon glyphicon-chevron-right"</h2></div>
+  <div id=previousPage>
+    <h2><span class="glyphicon glyphicon-chevron-left"</h2></div>
+    <div id=footer><small>Designed and coded by me, Jacob Abubo. Copyright 2017.</small></div>
+  <header id=header>
+    <div class=container>
+      <div class='row'>
+        <div class='col-md-6'></div>
+        <div class='col-md-6' id=links>
+          <button class="btn-lg btn-primary active menu" id=home>Home</button>
+          <button class="btn-lg btn-primary menu" id=project>Projects</button>
+          <button class="btn-lg btn-primary menu" id=theme>Theme</button>
+          <button class="btn-lg btn-primary menu" id=contact>Contact</button>
+        </div>
+      </div>
+  </header>
+  <div id=navbarHead>
+    <nav id=navigation class='navbar navbar-default'>
+      <div class='navbar-header'>
+        <!-- -->
+      </div>
+      <ul class='nav navbar-nav'>
+        <li><a href=#><span id=navHome title=Home class='glyphButton glyphicon glyphicon-home'></span></a></li>
+
+        <li><a href=#><span id=navProject title=Projects class='glyphButton glyphicon glyphicon-folder-open'></span></a></li>
+
+        <li><a href=#><span id=navTheme title='Theme' class='glyphButton glyphicon glyphicon-play'></span></a></li>
+        <li>
+          <a href=#><span id=navContact title=Contact class='glyphButton glyphicon glyphicon-envelope' </span></a>
+        </li>
+
+
+      </ul>
+    </nav>
+  </div>
+  <div class=cc>
+    <div id=carousel>
+      <div id=c1 class=side>
+        <canvas id=doodle1></canvas>
+        <p>
+          <div id=homePage>
+
+            <div id=messageBox class=jumbotron align=center>
+              <button id=replay class="btn-xs">Replay Animation</button>
+              <div id=leftShutter></div>
+              <div id=rightShutter></div>
+              <h1 id=homeMessage>Aspiring <span id=ninja>ninja</span> front-end  developer on a mission to: <br>
+        <div class=row>
+                    <div class=col-xs-12>
+      <span id=challenge>Tackle&nbsp;challenges</span>
+          </div>
+                  <div class=col-xs-12>
+          <span><span id=inno>Inno</span><span id=vate>vate&nbsp;&nbsp;</span></span>
+          </div>
+          
+          <div class=col-xs-12>
+        <span id=learn>&nbsp;&nbsp;&nbsp;</span>
+            <span id=sideCaret>&#17;</span>
+          </div>
+          
+
+
+          </h1></div>
+
+          </div>
+        </p>
+      </div>
+
+
+      <div id=c2 class=side >
+        <div id=projectPage align=center>
+          <canvas id=doodle2></canvas>
+          <h1 id=pageH>FreeCodeCamp Projects</h1>
+          <div class='imageBox' ng-repeat="project in projectList">
+            <img src={{project.image}} class=img-responsive>
+            <span class=projDesc><h3>{{project.name}}</h3><p>{{project.description}}<br> <a href={{project.link}} style="text-decoration: underline; font-weight: bold;" target="_blank">{{project.linkText}}</a></p></span>
+          </div>
+
+         
+        
+          
+       
+
+        </div>
+
+      </div>
+
+
+      <div id=c3 class=side>
+        <div id=themePage>
+          <canvas id=doodle3></canvas>
+          <h1 id=pageH>Pick a theme</h1>
+          <button id=dominoTheme class=theme>Domino (default)</button>
+          <button id=ninjaTheme class=theme>Ninja</button>
+
+          <button id=doodleTheme class=theme>doodel :V</button>
+          <button id=magnetTheme class=theme>Magnet</button>
+                    <button id=beachTheme class=theme>Beach</button>
+
+        </div>
+      </div>
+      <div id=c4 class=side>
+        <div id=contactPage>
+         
+          <canvas id=doodle4></canvas>
+          <h1 id=pageH>Contact</h1>
+          <div id=contactMessage align=center>
+          <p id=firstHalf>&nbsp;&nbsp;&nbsp;Thank you for visiting my web page! I'm currently looking for a beginner front-end developer position or similar jobs within reasonable distance of Los Angeles.<br>&nbsp;&nbsp;&nbsp;I am open to constructive criticism, questions, collaborations, and conversations related to the web development field. If you would like to contact me, please email me at <a href=mailto:jx2abubo@gmail.com>jx2abubo@gmail.com</a>.</p>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+    
+    
+  </div>
+   <!--For beach theme-->
+     <div id=sun>
+    <div id=shine0 class=shineShort><span class=triangle-right></span></div>
+    <div id=shine1 class=shineLong><span class=triangle-right></span></div>
+    <div id=shine2 class=shineShort><span class=triangle-right></span></div>
+    <div id=shine3 class=shineLong><span class=triangle-right></span></div>
+    <div id=shine4 class=shineShort><span class=triangle-right></span></div>
+    <div id=shine5 class=shineLong><span class=triangle-right></span></div>
+    <div id=shine6 class=shineShort><span class=triangle-right></span></div>
+    <div id=shine7 class=shineLong><span class=triangle-right></span></div>
+  </div>
+   
+      <!--For magnet theme-->
+  <div id=ironContainer>
+  <div id=ironHolder>
+    <div id=iron1 class=iron>100 Tons</div>
+    <div id=iron2 class=iron>Super Heavy</div>
+    <div id=iron3 class=iron>Much Weight</div>
+    <div id=iron4 class=iron>Wow</div>
+    <div id=iron5 class=iron>So magnet0</div>
+    <div id=iron6 class=iron>Such physics</div>
+  </div>
+  </div>
+   
+   <button id="clearPaint">Clear Paint</button>
+</body>
+
+</html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
