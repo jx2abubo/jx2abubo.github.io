@@ -371,6 +371,7 @@ a{
   position: relative;
   font-size: 1.5vw;
   display: none;
+  text-align: center;
 }
 
 #pageH{
@@ -395,6 +396,7 @@ a{
   box-shadow: 0 0 10px black;
   transition: display 1s ease;
   -webkit-transform: translateZ(0);
+  text-align: center;
 }
 #messageBox h1{
   font-size: 4vw;
