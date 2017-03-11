@@ -364,6 +364,7 @@ img{
 
 .projectSelect img{
   width: 50%;
+  padding:none!important;
 }
 a{
   z-index: 10000;
