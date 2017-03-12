@@ -276,7 +276,6 @@ function replayAnimation(){
   });
 
   $glyphButton.on("click", function() {
-        $("body").scrollTop(0);
     switch (this.id) {
       case "navHome":
         $home.click();
@@ -300,7 +299,6 @@ function replayAnimation(){
   });
   
   $links.children().on('click', function() {
-    $("body").scrollTop(0);
     $glyphButton.removeClass("activeGlyph");
     switch (this.id) {
       case "home":
