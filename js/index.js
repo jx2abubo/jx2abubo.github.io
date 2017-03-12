@@ -235,7 +235,6 @@ function replayAnimation(){
   });
   
   $next.on("click", function() {
-    $("body").scrollTop(0);
     switch (currentPage) {
       case "home":
         $project.click();
@@ -251,7 +250,6 @@ function replayAnimation(){
     };
   })
   $previous.on("click", function() {
-    $("body").scrollTop(0);
     switch (currentPage) {
       case "project":
         $home.click();
@@ -278,6 +276,7 @@ function replayAnimation(){
   });
 
   $glyphButton.on("click", function() {
+        $("body").scrollTop(0);
     switch (this.id) {
       case "navHome":
         $home.click();
