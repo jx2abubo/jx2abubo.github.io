@@ -530,11 +530,6 @@ a{
 
 #c4 {
   transform: rotateY(269.999deg) translateZ(60vw);
-    -webkit-touch-callout: none;
-  -webkit-user-select: initial;
-  -khtml-user-select: initial;
-  -moz-user-select: initial;
-  -ms-user-select: initial;
 }
 
 canvas{
