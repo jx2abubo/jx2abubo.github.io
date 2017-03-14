@@ -6,10 +6,9 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   font-weight: 0!important;
-} 
-html, body{
    overflow: hidden!important;
-}
+} 
+
 #footer{
   width: 100%;
   position: absolute;
