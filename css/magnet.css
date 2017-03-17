@@ -335,12 +335,12 @@ ul {
 }
 .iron{
   text-align: center;
-  font-size: 1vw;
+  font-size: 1vmax;
   margin: 0 auto;
   position: absolute;
   width: 100%;
   height: 100%;
-  line-height: 10vw;
+  line-height: 10vmax;
   /*transform: translate3d(150px, 150px, 0);*/
   border: .2vw solid black;
     transform-origin: center;
@@ -349,23 +349,23 @@ ul {
 }
 
 #iron1{
-  transform: rotateY(0deg) translateZ(5vw);
+  transform: rotateY(0deg) translateZ(5vmax);
 }
 #iron2{
-  transform: rotateY(90deg) translateZ(5vw);
+  transform: rotateY(90deg) translateZ(5vmax);
 }
 #iron3{
-  transform: rotateY(180deg) translateZ(5vw);
+  transform: rotateY(180deg) translateZ(5vmax);
 }
 #iron4{
-  transform: rotateY(270deg) translateZ(5vw);
+  transform: rotateY(270deg) translateZ(5vmax);
 }
 #iron5{
-  transform: rotateX(90deg) translateZ(5vw);
+  transform: rotateX(90deg) translateZ(5vmax);
 }
 
 #iron6{
-  transform: rotateX(-90deg) translateZ(5vw);
+  transform: rotateX(-90deg) translateZ(5vmax);
 }
 #ironHolder{
     position: relative;
