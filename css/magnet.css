@@ -41,7 +41,7 @@ body {
   }
 }
 p{
-  font-color: white;
+  color: white;
 }
 #nerdragon {
   width: 20%;
@@ -385,8 +385,7 @@ ul {
   position: relative;
   color: black;
   background-color: transparent;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  box-shadow: 0 0 10px black;
-  font-size: 1.8vw;
+  padding-left: 2vmax;
+  padding-right: 2vmax;
+  font-size: 1.8vmax;
 }
