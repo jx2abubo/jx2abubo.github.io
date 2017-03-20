@@ -429,10 +429,7 @@ function replayAnimation(){
   });
     
   $(document).on("mousemove touchmove", function(e){
-    rotateNum1 = Math.floor(Math.random() * 360);
-    rotateNum2 = Math.floor(Math.random() * 360);
-    clientX = e.clientX || e.touches[0].clientX;
-    clientY = e.clientY || e.touches[0].clientY;
+
     magnetCounter += 1;
     
     if(magnetCounter < 20){
@@ -440,6 +437,11 @@ function replayAnimation(){
     }
 
     magnetCounter = 0;
+    
+    rotateNum1 = Math.floor(Math.random() * 360);
+    rotateNum2 = Math.floor(Math.random() * 360);
+    clientX = e.clientX || e.touches[0].clientX;
+    clientY = e.clientY || e.touches[0].clientY;
     
     if(magnetOn){
           $ironHolder.css("transition", "all .15s ease-in");
