@@ -41,6 +41,7 @@ $(document).ready(function() {
   ///initialize functions defined bottom of page
   var startDoodle;
   var animateShutter;
+  var magnetCounter;
   ////////////Project Page 
   var $projDesc = $(".projDesc");
   $("*").dblclick(function(e) {
@@ -432,11 +433,20 @@ function replayAnimation(){
     rotateNum2 = Math.floor(Math.random() * 360);
     clientX = e.clientX || e.touches[0].clientX;
     clientY = e.clientY || e.touches[0].clientY;
+    magnetCounter += 1;
+    
+    if(magnetCounter < 200){
+      return false;
+    }
+
+    magnetCounter = 0;
+    
     if(magnetOn){
           $ironHolder.css("transition", "all .15s ease-in");
  $ironHolder.css("transform", "translateX(" + (clientX - startX) + "px) translateY(" + (clientY - startY) + "px) rotateY(" + rotateNum1 + "deg) rotateX(" + rotateNum2 +"deg)");
     }
   });
+    
   $(document).on("mouseup touchend", function(e){
     magnetOn = false;
     $ironHolder.css("transition", "");
