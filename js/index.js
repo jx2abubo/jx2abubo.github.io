@@ -435,7 +435,7 @@ function replayAnimation(){
     clientY = e.clientY || e.touches[0].clientY;
     magnetCounter += 1;
     
-    if(magnetCounter < 200){
+    if(magnetCounter < 20){
       return false;
     }
 
