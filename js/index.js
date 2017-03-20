@@ -341,7 +341,7 @@ function replayAnimation(){
     $home.click();
     $next.hide();
   var toScroll = 0;
-  var scrollSensitivity = 2;
+  var scrollSensitivity = 5;
   $(document).on("wheel", function(event){
     toScroll += event.originalEvent.wheelDelta;
     var action;
