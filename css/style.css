@@ -18,7 +18,7 @@ body {
 }
 
 p{
-  font-color: black;
+  color: black;
   font-size: 1em;
 }
 
@@ -96,7 +96,9 @@ h1 {
 }
 
 .glyphicon-chevron-right, .glyphicon-chevron-left {
-  background-color: none;
+    background-color: white;
+  border: .1em solid black;
+  border-radius: 50%;
   color: black;
   font-size: 2em;
 }
