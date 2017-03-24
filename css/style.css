@@ -377,6 +377,7 @@ img{
   padding-right: 3vmax;
 }
 .projectSelect img{
+ margin-left: -3vw;
   width: 50%;
 }
 
