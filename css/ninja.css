@@ -1,6 +1,6 @@
 body {
-  font-family: bahiana;
-    -webkit-touch-callout: none;
+  font-family: "merienda one";
+  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -8,13 +8,14 @@ body {
   font-weight: 0!important;
 }
 
-p{
-  color: white;
-  font-size: 2em;
-}
-h1{
+p {
   color: white;
 }
+
+h1 {
+  color: white;
+}
+
 #header {
   top: 0;
   background-color: black;
@@ -23,21 +24,23 @@ h1{
   z-index: 100;
   height: 45px;
 }
-#footer{
-  font-size: 1.5em;
-}
-.glyphicon-chevron-right, .glyphicon-chevron-left {
-    background-color: white;
+
+#footer {}
+
+.glyphicon-chevron-right,
+.glyphicon-chevron-left {
+  background-color: white;
   border: .1em solid black;
   border-radius: 50%;
   color: black;
 }
 
-.imageBox{
+.imageBox {
   position: relative;
   width: 30vw;
   height: auto;
   display: inline-block;
+  -webkit-transition: all .1s ease-out;
   transition: all .1s ease-out;
   margin-right: .5vw;
   margin-left: .5vw;
@@ -46,7 +49,7 @@ h1{
   border: 3px solid white;
 }
 
-.projectSelect{
+.projectSelect {
   position: absolute;
   z-index: 501;
   left: 0;
@@ -59,14 +62,15 @@ h1{
   padding-right: 3vw;
 }
 
-.projDesc{
+.projDesc {
   position: relative;
 }
 
-.pageH{
+.pageH {
   position: relative;
   margin: 0 auto;
-    margin-top: 45px;
+  margin-top: 45px;
+  -webkit-transition: margin-top .5s ease;
   transition: margin-top .5s ease;
   font-size: 36px;
   text-align: center;
@@ -86,7 +90,8 @@ h1{
 }
 
 #leftShutter {
-  transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
   z-index: 1;
   position: absolute;
   Left: 0;
@@ -98,7 +103,8 @@ h1{
 }
 
 #rightShutter {
-  transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
   z-index: 1;
   position: absolute;
   right: 0;
@@ -122,34 +128,58 @@ h1{
   background-color: #0d0d0d;
   color: white;
 }
-#carousel{
-  
+
+#carousel {
+  -webkit-transition: -webkit-transform .1s ease!important;
+  transition: -webkit-transform .1s ease!important;
   transition: transform .1s ease!important;
+  transition: transform .1s ease, -webkit-transform .1s ease!important;
 }
 
 #c1 {
-  transform: rotateY(0deg) translateZ(50vw);
-
+  -webkit-transform: rotateY(0deg) translateZ(50vmax);
+          transform: rotateY(0deg) translateZ(50vmax);
 }
 
 #c2 {
-  transform: rotateY(89.999deg) translateZ(50vw);
+  -webkit-transform: rotateY(89.999deg) translateZ(50vmax);
+          transform: rotateY(89.999deg) translateZ(50vmax);
 }
 
 #c3 {
   text-align: center;
-  transform: rotateY(180deg) translateZ(50vw);
+  -webkit-transform: rotateY(180deg) translateZ(50vmax);
+          transform: rotateY(180deg) translateZ(50vmax);
 }
 
 #c4 {
-  transform: rotateY(269.999deg) translateZ(50vw);
+  -webkit-transform: rotateY(269.999deg) translateZ(50vmax);
+          transform: rotateY(269.999deg) translateZ(50vmax);
+}
+
+#c5 {
+  -webkit-transform: rotateX(-89.999deg) rotateZ(89.999deg) translateZ(50vmax);
+          transform: rotateX(-89.999deg) rotateZ(89.999deg) translateZ(50vmax);
+}
+
+#c6 {
+  -webkit-transform: rotateX(89.999deg) rotateZ(89.999deg) translateZ(50vmax);
+          transform: rotateX(89.999deg) rotateZ(89.999deg) translateZ(50vmax);
 }
 
 #contactMessage {
   position: relative;
   color: white;
   background-color: transparent;
-  padding-left: 2vmax;
-  padding-right: 2vmax;
-  font-size: 1.8vmax;
+}
+
+#contactMessage p {}
+
+#contactMessage a {
+  color: red!important;
+}
+
+.customForm {
+  color: white!important;
+  background-color: black!important;
 }
