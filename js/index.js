@@ -570,7 +570,7 @@
     var $ngTwitch = {
       "image": "http://i347.photobucket.com/albums/p460/jx2bandito/TwitchSS_zps7vdb0i1m.png",
       "name": "Twitch Viewer",
-      "description": "This page uses the Twitch.tv API to see whether streamers are online or offline. Going beyond the suggested requirements from FreeCodeCamp.com, I included a button that removes streamers from the list and added the function to include additional streamers.",
+      "description": "This page uses the Twitch.tv API to see whether streamers are online or offline. Going beyond the suggested requirements from FreeCodeCamp.com, I included a button that removes streamers from the list and added the function to include additional streamers. Works perfectly but is due for refactoring.",
       "link": "http://codepen.io/jx2bandito/debug/eBaVvp",
       "linkText": "Check out the Twitch streamers here!"
     };
