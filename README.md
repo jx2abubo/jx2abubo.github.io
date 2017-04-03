@@ -1,1 +1,1 @@
-# jx2abubo.github.io
+# jx2bandito.github.io
