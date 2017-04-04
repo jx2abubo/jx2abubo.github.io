@@ -193,34 +193,10 @@
 
     };
 
-    ///////////Resize functions for more accurate responsive design
     $(window).on("resize", function() {
       defineShutter();
     });
 
-    if ($(window).width() < 700) {
-      $header.hide();
-      $navigation.show();
-      $projDesc.css("font-size", "2.5vw");
-      $un.css("animation", "0");
-      $imageBox.css("transition", "none");
-      $pleaseNav.hide();
-    }
-
-    $(window).on("resize", function() {
-      if ($(window).width() < 700) {
-        $header.hide();
-        $navigation.show();
-        $projDesc.css("font-size", "2.5vw");
-        $pleaseNav.hide();
-      } else {
-        $header.show();
-        $navigation.hide();
-        $projDesc.css("font-size", "");
-        $pleaseNav.show();
-      }
-
-    })
 
     //////////////Click functions for navigating page
 
