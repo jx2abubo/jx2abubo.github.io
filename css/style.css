@@ -946,3 +946,21 @@ canvas {
   -webkit-animation: popOutAnimation .5s forwards;
           animation: popOutAnimation .5s forwards;
 }
+
+@media screen and (max-width: 700px){
+  #header{
+    display: none;
+  }
+  #navigation{
+    display: block;    
+  }
+ .projDesc{
+    font-size: 2vmax;
+  }
+  #pleaseNav{
+    display: none;
+  }
+  #sun{
+    animation: none;
+  }  
+}
