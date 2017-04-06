@@ -159,7 +159,7 @@
           <h1 class=pageH>Personal Projects</h1>
           <div class='imageBox' ng-repeat="project in projectList2">
             <img src={{project.image}} class=img-responsive>
-            <span class=projDesc><h3>{{project.name}}</h3><p>{{project.description}}<br> <a href={{project.link}} style="text-decoration: underline; font-weight: bold;" target="_blank">{{project.linkText}}</a></p></span>
+            <div class=projDesc><h3>{{project.name}}</h3><p>{{project.description}}<br> <a href={{project.link}} style="text-decoration: underline; font-weight: bold;" target="_blank">{{project.linkText}}</a></p></div>
           </div>
 
 
@@ -184,7 +184,6 @@
       </div>
 
     </div>
-  </div>
   </div>
 
 
@@ -223,4 +222,3 @@
 
 
 </html>
-
