@@ -537,12 +537,10 @@ ul {
   border-color: darkgreen;
   border-width: .4em 0 .4em 0!important;
   border-style: solid;
-  vertical-align: top;
-}
-
-.imageBox:hover {
   overflow: hidden;
 }
+
+
 
 img {
   max-width: 25vmax;
