@@ -8,7 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-
+  <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <link rel='stylesheet prefetch' href='http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+  
   <link rel="stylesheet" href="css/style.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
@@ -145,8 +147,8 @@
           <h1 class=pageH>&nbsp;</h1>
           <div id=contactMessage>
             &nbsp;&nbsp;&nbsp;Thank you for visiting my web page! I'm currently looking for a beginner front-end developer position or similar jobs within reasonable distance of Los Angeles.<br>
-              <div></div>
-              &nbsp;&nbsp;&nbsp;I am open to constructive criticism, questions, collaborations, and conversations related to the web development field. If you would like to contact me, please email me at <a href=mailto:jx2abubo@gmail.com>jx2abubo@gmail.com</a>              or <a id=contactClick href=#>do it here by filling out the contact form</a>.
+            <div></div>
+            &nbsp;&nbsp;&nbsp;I am open to constructive criticism, questions, collaborations, and conversations related to the web development field. If you would like to contact me, please email me at <a href=mailto:jx2abubo@gmail.com>jx2abubo@gmail.com</a>            or <a id=contactClick href=#>do it here by filling out the contact form</a>.
           </div>
 
         </div>
@@ -159,7 +161,10 @@
           <h1 class=pageH>Personal Projects</h1>
           <div class='imageBox' ng-repeat="project in projectList2">
             <img src={{project.image}} class=img-responsive>
-            <div class=projDesc><h3>{{project.name}}</h3><p>{{project.description}}<br> <a href={{project.link}} style="text-decoration: underline; font-weight: bold;" target="_blank">{{project.linkText}}</a></p></div>
+            <div class=projDesc>
+              <h3>{{project.name}}</h3>
+              <p>{{project.description}}<br> <a href={{project.link}} style="text-decoration: underline; font-weight: bold;" target="_blank">{{project.linkText}}</a></p>
+            </div>
           </div>
 
 
@@ -213,11 +218,34 @@
 
   <button id="clearPaint">Clear Paint</button>
 
+  <div id=sliderWrap>
+    <div id=sliderContainer>
+      <div id=sliderContent>
+        <p id=sliderInfo>
+          <label for="amount">Transition:</label>
+          <input type="text" id="amount" readonly>
+        </p>
+
+        <div id="slider"></div>
+      </div>
+    </div>
+
+    <div title="Set navigation speed" id=openSlider>
+      <span id=cog1 class="fa fa-2x fa-cog"></span>
+      <span id=cog2 class="fa fa-4x fa-cog"></span>
+    </div>
+
+  </div>
+
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
 
+
   <script src="js/index.js"></script>
+
+
 </body>
 
 
