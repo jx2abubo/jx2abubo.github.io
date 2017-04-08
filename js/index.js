@@ -224,6 +224,11 @@
     };
 
     defineShutter();
+    
+    $(window).on("resize", function() {
+      defineShutter();
+    });
+
 
     function replayAnimation() {
       defineShutter();
