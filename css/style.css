@@ -187,7 +187,7 @@ h1 {
   animation: fadeIn 2s forwards;
   color: black;
   display: none;
-  z-index: 100000;
+  z-index: 1000000!important;
 }
 
 @-webkit-keyframes fadeIn {
@@ -964,7 +964,6 @@ canvas {
   width: 200px;
   height: 35vh;
   min-height: 150px;
-  z-index: -1;
 }
 
 #slider {
@@ -997,7 +996,6 @@ canvas {
   background-color: white;
   font-family: roboto!important;
   color: black;
-  z-index: -1;
 }
 
 #slider .ui-slider-handle {
