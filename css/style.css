@@ -1025,6 +1025,7 @@ canvas {
   color: black;
   transform: scale(.5) translate3d(0, 0, 0);
   transition: transform 0.5s;
+  z-index: 100000!important;
 }
 
 #openSlider.opened {
