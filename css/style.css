@@ -179,15 +179,14 @@ h1 {
 #replay {
   position: absolute;
   bottom: 1vw;
-  right: 1vw;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  font-size: 1em;
+  right: 5vw;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  font-size: 1vmax;
   -webkit-animation: fadeIn 2s forwards;
   animation: fadeIn 2s forwards;
   color: black;
   display: none;
-  z-index: 1000000!important;
 }
 
 @-webkit-keyframes fadeIn {
@@ -961,7 +960,7 @@ canvas {
   position: absolute;
   bottom: 6%;
   right: 0;
-  width: 200px;
+  width: 130px;
   height: 35vh;
   min-height: 150px;
 }
@@ -1004,6 +1003,7 @@ canvas {
   background: -o-linear-gradient(white, black);
   background: -moz-linear-gradient(white, black);
   background: linear-gradient(white, black);*/
+
 }
 
 #slider .ui-slider-handle:hover {
@@ -1023,7 +1023,6 @@ canvas {
   color: black;
   transform: scale(.5) translate3d(0, 0, 0);
   transition: transform 0.5s;
-  z-index: 100000!important;
 }
 
 #openSlider.opened {
