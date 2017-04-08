@@ -967,10 +967,16 @@ canvas {
 
 #slider {
   width: 10px;
-  height: 80%;
+  height: 65%;
   position: absolute;
   right: calc(50% - 5px);
   z-index: 10000000!important;
+}
+
+@media screen and (max-height: 600px){
+  #slider{
+    height: 50%;
+  }
 }
 
 #sliderContent {
@@ -987,7 +993,7 @@ canvas {
   width: auto;
   text-align: center;
   display: none;
-  min-height: 150px;
+  min-height: 100px;
   height: 35vh;
   border: .1em inset silver;
   border-radius: 5%;
@@ -1005,6 +1011,7 @@ canvas {
   background: linear-gradient(white, black);*/
 
 }
+
 
 #slider .ui-slider-handle:hover {
   cursor: pointer!important;
