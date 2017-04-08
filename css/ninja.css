@@ -129,13 +129,6 @@ h1 {
   color: white;
 }
 
-#carousel {
-  -webkit-transition: -webkit-transform .1s ease!important;
-  transition: -webkit-transform .1s ease!important;
-  transition: transform .1s ease!important;
-  transition: transform .1s ease, -webkit-transform .1s ease!important;
-}
-
 #c1 {
   -webkit-transform: rotateY(0deg) translateZ(50vmax);
           transform: rotateY(0deg) translateZ(50vmax);
