@@ -44,6 +44,7 @@
     var onProject2 = false;
     var onContact2 = false;
     var onForm = false;
+    var on3d = true;
     ///initialize functions defined bottom of page
     var startDoodle;
     var animateShutter;
@@ -86,16 +87,44 @@
       $tyleSwap.attr("href", URL);
     }
 
+    $domino.tooltip({
+      show: {
+        effect: "blind",
+        delay: 100
+      },
+
+      position: {
+        my: "left center",
+        at: "right center"
+      }
+    });
     $domino.on('click', function() {
       $canvas.hide();
       styleSwap("");
     });
 
+    $ninja.tooltip({
+      show: {
+        effect: "slide",
+        delay: 10
+      },
+
+      position: {
+        my: "left center",
+        at: "right center"
+      }
+    });
     $ninja.on("click", function() {
       $canvas.hide();
       styleSwap("css/ninja.css");
     });
 
+    $doodle.tooltip({
+      position: {
+        my: "left center",
+        at: "right center"
+      }
+    });
     $doodle.on("click", function() {
       $canvas.show();
       $clearPaint.click();
@@ -110,11 +139,28 @@
       startDoodle("doodle6");
     });
 
+    $magnet.tooltip({
+      position: {
+        my: "left center",
+        at: "right center"
+      }
+    });
     $magnet.on("click", function() {
       $canvas.hide();
       styleSwap("css/magnet.css");
     });
 
+    $beach.tooltip({
+      show: {
+        effect: "highlight",
+        delay: 100
+      },
+
+      position: {
+        my: "left center",
+        at: "right center"
+      }
+    });
     $beach.on("click", function() {
       $canvas.hide();
       styleSwap("css/beach.css")
@@ -192,11 +238,6 @@
       }, 1000);
 
     };
-
-    $(window).on("resize", function() {
-      defineShutter();
-    });
-
 
     //////////////Click functions for navigating page
 
@@ -308,7 +349,7 @@
 
     $(document).keydown(function(e) {
 
-      if ($(":focus").hasClass("customForm")) {
+      if ($(":focus").hasClass("customForm") || $(":focus").hasClass("ui-slider-handle")) {
         return;
       }
 
@@ -523,6 +564,52 @@
     };
 
     startMagnet();
+
+    //////////////Slider
+
+    var $slider = $("#slider");
+    var $amount = $("#amount");
+    var $openSlider = $("#openSlider");
+    var $slideCont = $("#sliderContainer");
+    var $cog1 = $("#cog1");
+    var $cog2 = $("#cog2");
+
+    $slider.slider({
+      orientation: "vertical",
+      range: "min",
+      min: 0,
+      max: 200,
+      value: 100,
+      step: 10,
+      slide: function(event, slidePos) {
+        $amount.val(slidePos.value / 100 + "s");
+        $carousel.css("transition", "transform " + slidePos.value / 100 + "s")
+      }
+    });
+    $slider.tooltip();
+    $amount.val(1 + "s");
+
+    $openSlider.tooltip();
+    $openSlider.on('click', function() {
+      $cog1.toggleClass("spinCog1");
+      $cog2.toggleClass("spinCog2");
+
+      if ($openSlider.hasClass("opened")) {
+        $slideCont.hide("fold", {
+          horizFirst: 0
+        }, 500);
+        $openSlider.removeClass("opened");
+        return;
+      } else {
+        $slideCont.show("fold", {
+          horizFirst: 0
+        }, 500);
+        $openSlider.addClass("opened");
+        return;
+      }
+
+    });
+
   });
 
   var app = angular.module("portfolioApp", []);
@@ -546,7 +633,7 @@
     var $ngTwitch = {
       "image": "http://i347.photobucket.com/albums/p460/jx2bandito/TwitchSS_zps7vdb0i1m.png",
       "name": "Twitch Viewer",
-      "description": "This page uses the Twitch.tv API to see whether streamers are online or offline. Going beyond the suggested requirements from FreeCodeCamp.com, I included a button that removes streamers from the list and added the function to include additional streamers. Works perfectly but is due for refactoring.",
+      "description": "This page uses the Twitch.tv API to see whether streamers are online or offline. Going beyond the suggested requirements from FreeCodeCamp.com, I included a button that removes streamers from the list and added the function to include additional streamers. Works perfectly but due for refactoring.",
       "link": "http://codepen.io/jx2bandito/debug/eBaVvp",
       "linkText": "Check out the Twitch streamers here!"
     };
