@@ -177,6 +177,11 @@ h1 {
   background-color: black!important;
 }
 
+#sliderContainer{
+  color: white;
+  background-color: black;
+}
+
 #openSlider{
   color: white;
 }
