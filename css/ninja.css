@@ -180,3 +180,16 @@ h1 {
 #openSlider{
   color: white;
 }
+
+#slider .ui-slider-handle {
+  background-color: white;
+}
+
+#slider .ui-slider-handle:focus {
+  outline: none;
+  border: 1.6px solid white;
+}
+
+#slider .ui-slider-handle:hover {
+  cursor: pointer!important;
+}
