@@ -697,6 +697,14 @@
       "linkText": " View this flirtatious app here!"
     };
 
-    $scope.projectList2 = [$ngTaco, $ngSlide, $ngRedux, $ngFlirt];
+    var $ngPizza = {
+      "image": "http://i347.photobucket.com/albums/p460/jx2bandito/pizzaPositioner_zps7vewwjpe.png",
+      "name": "Pizza Positioner",
+      "description": "This page is meant to show what goes in my thought process as I work on a project. I include a JS function from my GitHub named 'dragAndPos'. With jQuery/jQuery UI included, it makes an element draggable, then outputs the CSS code showing the left and top positioning using percentage. The CSS code can then be pasted into the file. The positioning is responsive so long as the sizing unit stays consistent between child and parent. Great for positioning CSS art by eye, or for figuring out the necessary pattern.",
+      "link": "http://codepen.io/jx2bandito/pen/GWVyOL",
+      "linkText": "View the pen for this pepperoni pizza positioner here!"
 
+    }
+
+    $scope.projectList2 = [$ngTaco, $ngSlide, $ngRedux, $ngFlirt, $ngPizza];
   }]);
