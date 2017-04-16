@@ -114,7 +114,7 @@
           <canvas id=doodle2></canvas>
           <h1 class=pageH>FreeCodeCamp Projects</h1>
           <div class='imageBox' data-ng-repeat="project in projectList">
-            <img alt={{project.alt}} ng-src={{project.image}} class=img-responsive>
+            <img alt={{project.alt}} data-ng-src={{project.image}} class=img-responsive>
             <div class=projDesc>
               <h3>{{project.name}}</h3>
               <p>{{project.description}}<br> <a href={{project.link}} style="text-decoration: underline; font-weight: bold;" target="_blank">{{project.linkText}}</a></p>
@@ -159,7 +159,7 @@
         <div id=projectPage2>
           <canvas id=doodle5></canvas>
           <h1 class=pageH>Personal Projects</h1>
-          <div class='imageBox' ng-repeat="project in projectList2">
+          <div class='imageBox' data-ng-repeat="project in projectList2">
             <img src={{project.image}} class=img-responsive>
             <div class=projDesc>
               <h3>{{project.name}}</h3>
