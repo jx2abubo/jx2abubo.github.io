@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -10,7 +9,7 @@
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
   <link rel='stylesheet prefetch' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
-  
+
   <link rel="stylesheet" href="css/style.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
@@ -22,7 +21,8 @@
   <link id=styleSwap rel="stylesheet" href="#">
 </head>
 
-<body data-ng-app="portfolioApp" data-ng-controller="portfolioControl">
+<body>
+
 
   <div id=nextPage>
     <span class="glyphicon glyphicon-chevron-right"></span>
@@ -98,7 +98,7 @@
           
           <span class=col-xs-12>
         <span id=learn>&nbsp;&nbsp;&nbsp;</span>
-            <span id=sideCaret>|</span>
+            <span id=sideCaret>&#171;</span>
           </span>
                 </span>
 
@@ -112,15 +112,15 @@
       <div id=c2 class=side>
         <div id=projectPage>
           <canvas id=doodle2></canvas>
-          <h1 class=pageH>FreeCodeCamp Projects</h1>
-          <div class='imageBox' data-ng-repeat="project in projectList">
-            <img alt={{project.alt}} data-ng-src={{project.image}} class=img-responsive>
-            <div class=projDesc>
-              <h3>{{project.name}}</h3>
-              <p>{{project.description}}<br> <a href={{project.link}} style="text-decoration: underline; font-weight: bold;" target="_blank">{{project.linkText}}</a></p>
-            </div>
-          </div>
+          <h1 class=pageH>Personal Projects</h1>
 
+          <!-- <div class='imageBox'>
+            <img alt=` + project.altText + ` src=` + project.image + ` class=img-responsive>
+            <div class=projDesc>
+              <h3>` + project.name  + `</h3>
+              <p>` + project.description +`<br> <a href=` + project.link + ` style="text-decoration: underline; font-weight: bold;" target="_blank">` + project.linkText + `</a></p>
+            </div>
+          </div> -->
 
         </div>
 
@@ -158,16 +158,7 @@
       <div id=c5 class=side>
         <div id=projectPage2>
           <canvas id=doodle5></canvas>
-          <h1 class=pageH>Personal Projects</h1>
-          <div class='imageBox' data-ng-repeat="project in projectList2">
-            <img src={{project.image}} class=img-responsive>
-            <div class=projDesc>
-              <h3>{{project.name}}</h3>
-              <p>{{project.description}}<br> <a href={{project.link}} style="text-decoration: underline; font-weight: bold;" target="_blank">{{project.linkText}}</a></p>
-            </div>
-          </div>
-
-
+          <h1 class=pageH>FreeCodeCamp Projects</h1>
         </div>
 
       </div>
@@ -239,11 +230,8 @@
 
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
-  <!-- Duck punch for jQuery UI widget mobile touches. http://touchpunch.furf.com/ -->
-	
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
 
   <script src="js/index.js"></script>
 
