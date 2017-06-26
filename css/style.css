@@ -5,12 +5,12 @@ body {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  font-weight: 0!important;
-  overflow: hidden!important;
+  font-weight: 0 !important;
+  overflow: hidden !important;
 }
 
 html {
-  overflow: hidden!important;
+  overflow: hidden;
 }
 
 p {
@@ -54,7 +54,7 @@ h1 {
   top: 50vh;
   display: none;
   right: 1vw;
-  z-index: 10000!important;
+  z-index: 10000 !important;
   -webkit-transition: -webkit-animation 2s ease;
   transition: -webkit-animation 2s ease;
   transition: animation 2s ease;
@@ -69,7 +69,7 @@ h1 {
   top: 50vh;
   display: none;
   left: 1vw;
-  z-index: 10000!important;
+  z-index: 10000 !important;
   -webkit-transition: -webkit-animation 2s ease;
   transition: -webkit-animation 2s ease;
   transition: animation 2s ease;
@@ -78,13 +78,12 @@ h1 {
   animation: growIn 2s forwards;
 }
 
-#bottomPage,
-#topPage {
+#bottomPage, #topPage {
   position: absolute;
   background-color: transparent;
   bottom: 6vh;
   left: calc(50vw - 18px);
-  z-index: 10000!important;
+  z-index: 10000 !important;
   -webkit-transition: -webkit-animation 2s ease;
   transition: -webkit-animation 2s ease;
   transition: animation 2s ease;
@@ -95,7 +94,7 @@ h1 {
 }
 
 .glyphicon:hover {
-  cursor: pointer!important;
+  cursor: pointer !important;
 }
 
 @-webkit-keyframes growIn {
@@ -128,8 +127,7 @@ h1 {
   }
 }
 
-.glyphicon-chevron-right,
-.glyphicon-chevron-left {
+.glyphicon-chevron-right, .glyphicon-chevron-left {
   background-color: white;
   border: .1em solid black;
   border-radius: 50%;
@@ -241,10 +239,7 @@ ul {
   font-size: 1.5em;
 }
 
-#home,
-#project,
-#theme,
-#contact {
+#home, #project, #theme, #contact {
   position: inline;
   color: white;
   border-radius: 10%;
@@ -258,21 +253,15 @@ ul {
   font-size: 1em;
 }
 
-#home:hover,
-#project:hover,
-#theme:hover,
-#contact:hover {
+#home:hover, #project:hover, #theme:hover, #contact:hover {
   background-color: white;
   color: black;
   text-decoration: underline;
 }
 
-#home:focus,
-#project:focus,
-#theme:focus,
-#contact:focus {
-  outline: none!important;
-  outline-color: white!important;
+#home:focus, #project:focus, #theme:focus, #contact:focus {
+  outline: none !important;
+  outline-color: white !important;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -283,8 +272,8 @@ ul {
 }
 
 .active {
-  background-color: white!important;
-  color: black!important;
+  background-color: white !important;
+  color: black !important;
   color: black;
 }
 
@@ -474,11 +463,8 @@ ul {
   }
 }
 
-#home:active,
-#project:active,
-#play:active,
-#contact:active {
-  outline: none!important;
+#home:active, #project:active, #play:active, #contact:active {
+  outline: none !important;
   box-shadow: 0px 0px 0px 0px black;
 }
 
@@ -534,8 +520,8 @@ ul {
   margin-left: .5vmax;
   background-color: none;
   z-index: 500;
-  border-color: darkgreen;
-  border-width: .4em 0 .4em 0!important;
+  border-color: steelblue;
+  border-width: .4em 0 .4em 0;
   border-style: solid;
   overflow: hidden;
 }
@@ -551,14 +537,14 @@ img {
   z-index: 501;
   left: 0;
   top: 55px;
-  color: black!important;
+  color: black;
   background-color: white;
   width: 97vw;
   height: auto;
   padding-left: 3vw;
   padding-right: 3vw;
-  border-color: darkgreen;
-  border-width: .6em 0 .6em 0!important;
+  border-color: steelblue;
+  border-width: .6em 0 .6em 0;
   border-radius: 2%;
   -webkit-transition: -webkit-transform 0s all .05s;
   transition: -webkit-transform 0s all .05s;
@@ -567,7 +553,7 @@ img {
 }
 
 #projectPage2 .imageBox {
-  border-color: steelblue;
+  border-color: darkgreen;
 }
 
 #projectPage2 .imageBox:hover {
@@ -575,7 +561,7 @@ img {
 }
 
 #projectPage2 .projectSelect {
-  border-color: steelblue;
+  border-color: darkgreensteelblue;
 }
 
 .projectSelect p {
@@ -589,10 +575,10 @@ img {
 }
 
 .imageBox:hover img {
-  -webkit-transition: -webkit-transform 1s!important;
-  transition: -webkit-transform 1s!important;
-  transition: transform 1s!important;
-  transition: transform 1s, -webkit-transform 1s!important;
+  -webkit-transition: -webkit-transform 1s !important;
+  transition: -webkit-transform 1s !important;
+  transition: transform 1s !important;
+  transition: transform 1s, -webkit-transform 1s !important;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   -webkit-transform-origin: center;
@@ -760,12 +746,16 @@ a {
 }
 
 .rotateProj2 {
-  -webkit-transform: rotateX(89.999deg) rotateY(-89.999deg) translate3d(0, 0, 0);
+  -webkit-transform: rotateX(89.999deg)
+    rotateY(-89.999deg)
+    translate3d(0, 0, 0);
   transform: rotateX(89.999deg) rotateY(-89.999deg) translate3d(0, 0, 0);
 }
 
 .rotateCont2 {
-  -webkit-transform: rotateX(-89.999deg) rotateY(89.999deg) translate3d(0, 0, 0);
+  -webkit-transform: rotateX(-89.999deg)
+    rotateY(89.999deg)
+    translate3d(0, 0, 0);
   transform: rotateX(-89.999deg) rotateY(89.999deg) translate3d(0, 0, 0);
 }
 
@@ -970,11 +960,11 @@ canvas {
   height: 65%;
   position: absolute;
   right: calc(50% - 5px);
-  z-index: 10000000!important;
+  z-index: 10000000 !important;
 }
 
-@media screen and (max-height: 600px){
-  #slider{
+@media screen and (max-height: 600px) {
+  #slider {
     height: 50%;
   }
 }
@@ -999,7 +989,7 @@ canvas {
   border-radius: 5%;
   margin-left: 10px;
   background-color: white;
-  font-family: roboto!important;
+  font-family: roboto !important;
   color: black;
 }
 
@@ -1009,12 +999,10 @@ canvas {
   background: -o-linear-gradient(white, black);
   background: -moz-linear-gradient(white, black);
   background: linear-gradient(white, black);*/
-
 }
 
-
 #slider .ui-slider-handle:hover {
-  cursor: pointer!important;
+  cursor: pointer !important;
 }
 
 #slider .ui-slider-handle:focus {
@@ -1039,12 +1027,12 @@ canvas {
   position: absolute;
   right: -15px;
   top: -10px;
-  transition: transform 0.5s cubic-bezier(.58,.47,.68,1.3);
+  transition: transform 0.5s cubic-bezier(.58, .47, .68, 1.3);
   transform: scale(1.3) rotate(30deg) translate3d(0, 0, 0);
 }
 
 #cog2 {
-  transition: transform 0.5s cubic-bezier(.58,.47,.68,1.3);
+  transition: transform 0.5s cubic-bezier(.58, .47, .68, 1.3);
   transform: translate3d(0, 0, 0);
 }
 
@@ -1063,7 +1051,7 @@ canvas {
 }
 
 #openSlider:hover {
-  cursor: pointer!important;
+  cursor: pointer !important;
 }
 
 @media screen and (max-width: 700px) {
