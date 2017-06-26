@@ -513,6 +513,7 @@ ul {
   position: relative;
   width: 25vmax;
   height: auto;
+  margin-bottom: 10px;
   display: inline-block;
   -webkit-transition: all .05s ease-out;
   transition: all .05s ease-out;
