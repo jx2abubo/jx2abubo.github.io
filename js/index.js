@@ -746,6 +746,15 @@ $(document).ready(function() {
       linkText: "Challenge Simon here!",
       altText: "A screenshot of my Simon game"
     },
+    Quote: {
+            "image": "http://i347.photobucket.com/albums/p460/jx2bandito/quoteReduxSS_zpscokfmgyc.png",
+      "name": "Random Quote Generator",
+      "description": "A quote generator. While it seems to be random, it is not truly random; no quote will be repeated unless the other quotes have already been shown, in which case a new random cycle is begun. Comes with a Twitter button.",
+      "link": "http://s.codepen.io/jx2bandito/debug/evjGVX",
+      "linkText": " View the quote machine here!",
+      altText: "A screenshot of my random quote generator"
+    }
+    ,
     Tic: {
          image:
         "http://i347.photobucket.com/albums/p460/jx2bandito/TicTacToe_zps0xmr63yr.png",
@@ -783,16 +792,6 @@ $(document).ready(function() {
       link: "https://codepen.io/jx2bandito/debug/VPYPmm",
       linkText: "Calculate stuff here!",
       altText: "A screenshot of my JS Calculator"
-    },
-    Quote: {
-            image:
-        "http://i347.photobucket.com/albums/p460/jx2bandito/QuoteSS_zpsiuu6zt2p.png",
-      name: "Random Quote Generator",
-      description:
-        "One of my earliest projects, which explains the terrible design. A quote generator which contains some of my favorite quotes, and a custom, fully functional Tweet button. While it claims to be random, it is not truly random because no quote will be repeated unless the other quotes have already been shown, in which case a new random cycle is begun.",
-      link: "https://codepen.io/jx2bandito/debug/NbOWxJ",
-      linkText: " Read the quotes here!",
-      altText: "A screenshot of my random quote generator"
     }
   }
 
