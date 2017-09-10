@@ -641,10 +641,36 @@ $(document).ready(function() {
     }
   });
 
+  function addProjects(pageID, projectObj) {
+    for (var a in projectObj) {
+      var project = projectObj[a];
+      $(pageID).append(
+        `<div class='imageBox'>
+            <img alt=` +
+          project.altText +
+          ` src=` +
+          project.image +
+          ` class=img-responsive>
+            <div class=projDesc>
+              <h3>` +
+          project.name +
+          `</h3>
+              <p>` +
+          project.description +
+          `<br> <a href=` +
+          project.link +
+          ` style="text-decoration: underline; font-weight: bold;" target="_blank">` +
+          project.linkText +
+          `</a></p>
+            </div>
+          </div>`
+      );
+    }
+  }
+  
   var project1 = {
     Lampshade: {
-      image:
-        "./lampshadeSS.png",
+      image: "lampshadeSS.png",
       name: "Lampshade Hangers Co.",
       description:
         "A mock website. I wanted to create yet another project that looked like a standard webpage, but I also wanted to experiment with scroll-activated animation using GSAP and ScrollMagic. The shopping page features a simple two-way binding and a sorting option for the listed lampshades using jQuery.",
@@ -705,32 +731,6 @@ $(document).ready(function() {
     }
   };
 
-  function addProjects(pageID, projectObj) {
-    for (var a in projectObj) {
-      var project = projectObj[a];
-      $(pageID).append(
-        `<div class='imageBox'>
-            <img alt=` +
-          project.altText +
-          ` src=` +
-          project.image +
-          ` class=img-responsive>
-            <div class=projDesc>
-              <h3>` +
-          project.name +
-          `</h3>
-              <p>` +
-          project.description +
-          `<br> <a href=` +
-          project.link +
-          ` style="text-decoration: underline; font-weight: bold;" target="_blank">` +
-          project.linkText +
-          `</a></p>
-            </div>
-          </div>`
-      );
-    }
-  }
   
   var project2 = {
     Simon: {
