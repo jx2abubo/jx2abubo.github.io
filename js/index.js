@@ -659,7 +659,7 @@ $(document).ready(function() {
       name: "Super Sanic Hegebros GSAP",
       description:
         "I made this short animation clip after taking an interest in SVG and GreenSock Animation Platform. It's a mash-up of Sanic, an intentionally poorly-drawn version of Sonic the Hedgehog, and a re-imagined version of the Super Mario Bros. opening background. The SVG elements were made using Method Draw, with the exception of Sanic. The animation is controlled via keyboard so there is no mobile support for this particular version of this project.",
-      link: "https://s.codepen.io/jx2bandito/debug/YVzdrY",
+      link: "/superSanic",
       linkText: " Watch Sanic get lost here!",
       altText: "Screenshot of my Sanic GSAP project"
     },
@@ -669,7 +669,7 @@ $(document).ready(function() {
       name: "Tacoholics Anonymous",
       description:
         "A mock page for a support group promising to help people whose lives are being ruined by their love of tacos. I made this web page after realizing that none of my projects looked like they belonged in an actual website. It's a responsive static web page featuring simple, clean design with subtle but effective use of white space. The featured scrolling effects are simple because I wanted to figure out how to implement them manually before using Scroll Magic JS. Looks best in Chrome.",
-      link: "https://s.codepen.io/jx2bandito/debug/zZwgKR",
+      link: "/tacoholicsAnonymous",
       linkText: " Cure your taco addiction here!",
       altText: "Screenshot of Tacoholics Anonymous"
     },
@@ -680,7 +680,7 @@ $(document).ready(function() {
       name: "Slide Puzzle",
       description:
         "The bomb is ticking and the only way to stop it is to solve the slide puzzle! I made this because my real life slide puzzle kept jamming. The game works by comparing the CSS positions of the slides. Tested in Chrome and Firefox.",
-      link: "https://s.codepen.io/jx2bandito/debug/rymrmL",
+      link: "/slidePuzzle",
       linkText: " Slide away here!",
       altText: "Screenshot of my slide puzzle"
     },
@@ -692,7 +692,7 @@ $(document).ready(function() {
       description:
         "A silly project I made in one day. The user is prompted to put their name, and then asked whether they love me. However, whenever they click 'No' the button switches places with 'Yes' and they end up clicking that instead. Based on a Valentines theme and somewhat satirical of modern love. Tested and made to be used by my phone.",
       link:
-        "https://s.codepen.io/jx2bandito/debug/863fdfd972a40e89d91b7d48a52da884",
+        "/flirtAlert",
       linkText: " View this flirtatious app here!",
       altText: "Screenshot of my flirting app"
     },
@@ -738,7 +738,7 @@ $(document).ready(function() {
   
   var project2 = {
     Simon: {
-            image: "http://i347.photobucket.com/albums/p460/jx2bandito/SimonSaysSS_zpszhy3jcjw.png",
+      image: "http://i347.photobucket.com/albums/p460/jx2bandito/SimonSaysSS_zpszhy3jcjw.png",
       name: "Simon Game",
       description:
         "A Simon Says game with a twist. Strict resets the sequence upon choosing the wrong button, and Nightmare mode removes colors and occasionally shuffles the game. Activate both for a trial harder than Dark Souls(maybe)!",
@@ -747,7 +747,7 @@ $(document).ready(function() {
       altText: "A screenshot of my Simon game"
     },
     Quote: {
-            "image": "http://i347.photobucket.com/albums/p460/jx2bandito/quoteReduxSS_zpscokfmgyc.png",
+      "image": "http://i347.photobucket.com/albums/p460/jx2bandito/quoteReduxSS_zpscokfmgyc.png",
       "name": "Random Quote Generator",
       "description": "A quote generator. While it seems to be random, it is not truly random; no quote will be repeated unless the other quotes have already been shown, in which case a new random cycle is begun. Comes with a Twitter button.",
       "link": "http://s.codepen.io/jx2bandito/debug/evjGVX",
@@ -756,7 +756,7 @@ $(document).ready(function() {
     }
     ,
     Tic: {
-         image:
+      image:
         "http://i347.photobucket.com/albums/p460/jx2bandito/TicTacToe_zps0xmr63yr.png",
       name: "Tic-Tac-Toe",
       description:
@@ -766,7 +766,7 @@ $(document).ready(function() {
       altText: "A screenshot of my Tic-Tac-Toe main menu"
     },
     Twitch: {
-       image: "http://i347.photobucket.com/albums/p460/jx2bandito/TwitchSS_zps7vdb0i1m.png",
+      image: "http://i347.photobucket.com/albums/p460/jx2bandito/TwitchSS_zps7vdb0i1m.png",
       name: "Twitch Viewer",
       description:
         "This page uses the Twitch.tv API to see whether streamers are online or offline. Going beyond the suggested requirements from FreeCodeCamp.com, I included a button that removes streamers from the list and added the function to include additional streamers. Works perfectly but due for refactoring.",
@@ -784,7 +784,7 @@ $(document).ready(function() {
       altText: "A screenshot of my Wikipedia searcher"
     },
     Calc: {
-            image:
+      image:
         "http://i347.photobucket.com/albums/p460/jx2bandito/CalculatorSS_zps2djg6rgu.png",
       name: "Calculator",
       description:
