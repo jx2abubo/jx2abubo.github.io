@@ -760,7 +760,7 @@ $(document).ready(function() {
         "http://i347.photobucket.com/albums/p460/jx2bandito/TicTacToe_zps0xmr63yr.png",
       name: "Tic-Tac-Toe",
       description:
-        "Robots have rebelled and the only way to stop them is to beat them in Tic-Tac-Toe. Practice by playing against a fellow human, or face 3 robots leaders who may or may not be based on other fictional robots.",
+        "Robots have rebelled and the only way to stop them is to beat them in Tic-Tac-Toe! Practice by playing against a fellow human, or face 3 robots leaders who may or may not be based on other fictional robots.",
       link: "https://codepen.io/jx2bandito/debug/jyGJvw",
       linkText: " Quell their rebellion here!",
       altText: "A screenshot of my Tic-Tac-Toe main menu"
