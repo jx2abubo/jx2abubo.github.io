@@ -644,7 +644,7 @@ $(document).ready(function() {
   var project1 = {
     Lampshade: {
       image:
-        "http://i347.photobucket.com/albums/p460/jx2bandito/lampshadeSS_zpsgujpnykj.png",
+        "./lampshadeSS.png",
       name: "Lampshade Hangers Co.",
       description:
         "A mock website. I wanted to create yet another project that looked like a standard webpage, but I also wanted to experiment with scroll-activated animation using GSAP and ScrollMagic. The shopping page features a simple two-way binding and a sorting option for the listed lampshades using jQuery.",
