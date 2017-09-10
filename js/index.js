@@ -652,7 +652,6 @@ $(document).ready(function() {
       linkText: " Illuminate your life with Lampshade Hangers Co. here!",
       altText: "Screenshot of the Lampshade Hangers Co. website"
     },
-
     Sanic: {
       image:
         "http://i347.photobucket.com/albums/p460/jx2bandito/sanicSS_zpsbzsqlfpg.png",
@@ -673,7 +672,6 @@ $(document).ready(function() {
       linkText: " Cure your taco addiction here!",
       altText: "Screenshot of Tacoholics Anonymous"
     },
-
     Slide: {
       image:
         "http://i347.photobucket.com/albums/p460/jx2bandito/slidePuzzleSS_zpsl27m0q5b.png",
@@ -684,7 +682,6 @@ $(document).ready(function() {
       linkText: " Slide away here!",
       altText: "Screenshot of my slide puzzle"
     },
-
     Flirt: {
       image:
         "http://i347.photobucket.com/albums/p460/jx2bandito/flirtSS_zps9sof1uov.png",
