@@ -693,7 +693,6 @@ $(document).ready(function() {
       linkText: " View this flirtatious app here!",
       altText: "Screenshot of my flirting app"
     },
-
     Pizza: {
       image:
         "http://i347.photobucket.com/albums/p460/jx2bandito/pizzaPositioner_zps7vewwjpe.png",
