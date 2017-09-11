@@ -3,7 +3,7 @@ $(document).ready(function() {
   var currentPage = "home";
   var $navigation = $("#navigation");
   var $carousel = $("#carousel");
-  var $next = $("#nextPage");
+  var $next = $("#nextPage"); 
   var $previous = $("#previousPage");
   var $bottom = $("#bottomPage");
   var $top = $("#topPage");
