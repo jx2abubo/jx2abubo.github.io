@@ -9,6 +9,7 @@ $(document).ready(function() {
   var $top = $("#topPage");
   var $imageBox = $(".imageBox");
   var $projectPage = $("#projectPage, #projectPage2");
+  var $projectSelect = $(".projectSelect");
   var $links = $("#links");
   var $btnLg = $(".btn-lg");
   var $tyleSwap = $("#styleSwap");
@@ -59,28 +60,32 @@ $(document).ready(function() {
   $("*").dblclick(function(e) {
     e.preventDefault();
   });
-  $projDesc.hide();
-
+  
+  
+  
   $projectPage.on("click", ".imageBox", function(event) {
+ 
     var $this = $(this);
-    if ($this.hasClass("projectSelect")) {
-      $projectPage.find(".projDesc").hide();
-      $this.removeClass("projectSelect");
-      $next.show();
-      $previous.show();
-    } else {
-      $this.removeClass("projectSelect");
-      $projectPage.find(".projDesc").hide();
-      $next.hide();
-      $previous.hide();
-      $this.children(".projDesc").show();
-      $this.addClass("projectSelect");
-    }
+	if($this.hasClass("projectSelect")){
+		$this.hide();
+		return;
+	}
+	var key = $this.attr("data-key");
+	var $currentProjDesc = onProject2 ? $(".projDesc2") : $(".projDesc1");
+	var currentProjPage = onProject2 ? project2 : project1;
+	$this.parent().children(".projectSelect").children("img").attr("src", currentProjPage[key]["image"]);
+	$currentProjDesc.children("h3").html(currentProjPage[key]["name"]);
+	$currentProjDesc.children("p").html(currentProjPage[key]["description"]);
+	$currentProjDesc.children("h3").html(currentProjPage[key]["name"]);
+	$currentProjDesc.children("a").attr("href", currentProjPage[key]["link"]);
+	$currentProjDesc.children("a").html(currentProjPage[key]["linkText"]);
+	console.log($currentProjDesc);
+	$projectSelect.show();
+	
   });
 
   $links.on("click", function() {
-    $projectPage.children(".imageBox").removeClass("projectSelect");
-    $projectPage.find(".projDesc").hide();
+    $projectSelect.hide();
   });
 
   ////////////Theme Change
@@ -286,6 +291,7 @@ $(document).ready(function() {
   });
 
   $bottom.on("click", function() {
+	$projectSelect.hide();
     if (onContact2) {
       $contact.click();
       return false;
@@ -298,7 +304,6 @@ $(document).ready(function() {
       $bottom.hide();
       $top.show();
       onProject2 = true;
-
       return false;
     }
 
@@ -316,6 +321,7 @@ $(document).ready(function() {
   $top.on("click", function() {
     if (onProject2) {
       $project.click();
+	  
       return false;
     }
 
@@ -645,24 +651,14 @@ $(document).ready(function() {
     for (var a in projectObj) {
       var project = projectObj[a];
       $(pageID).append(
-        `<div class='imageBox'>
-            <img alt=` +
+         `<div class='imageBox' data-key=`+
+		  String(a)
+		  +`>
+          <img alt=` +
           project.altText +
           ` src=` +
           project.image +
           ` class=img-responsive>
-            <div class=projDesc>
-              <h3>` +
-          project.name +
-          `</h3>
-              <p>` +
-          project.description +
-          `<br> <a href=` +
-          project.link +
-          ` style="text-decoration: underline; font-weight: bold;" target="_blank">` +
-          project.linkText +
-          `</a></p>
-            </div>
           </div>`
       );
     }

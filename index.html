@@ -113,7 +113,14 @@
         <div id=projectPage>
           <canvas id=doodle2></canvas>
           <h1 class=pageH>Personal Projects</h1>
-
+		  <div class="imageBox projectSelect">
+			<img class="img-responsive" src="#">
+			<div class="projDesc projDesc1">
+              <h3>` + project.name  + `</h3>
+              <p>` + project.description +`<br></p>
+			  <a href=` + project.link + ` style="text-decoration: underline; font-weight: bold;" target="_blank">` + project.linkText + `</a>
+            </div>
+		  </div>
           <!-- <div class='imageBox'>
             <img alt=` + project.altText + ` src=` + project.image + ` class=img-responsive>
             <div class=projDesc>
@@ -159,6 +166,14 @@
         <div id=projectPage2>
           <canvas id=doodle5></canvas>
           <h1 class=pageH>FreeCodeCamp Projects</h1>
+		  <div class="imageBox projectSelect">
+			<img class="img-responsive" src="#">
+			<div class="projDesc projDesc2">
+              <h3>` + project.name  + `</h3>
+              <p>` + project.description +`<br></p>
+			  <a href=` + project.link + ` style="text-decoration: underline; font-weight: bold;" target="_blank">` + project.linkText + `</a>
+            </div>
+		  </div>
         </div>
 
       </div>

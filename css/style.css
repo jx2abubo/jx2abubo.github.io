@@ -534,7 +534,8 @@ img {
 }
 
 .projectSelect {
-  position: absolute;
+  position: absolute!important;
+  display: none;
   z-index: 501;
   left: 0;
   top: 55px;
@@ -598,7 +599,6 @@ a {
 .projDesc {
   position: relative;
   font-size: 1.5vmax;
-  display: none;
 }
 
 .pageH {
