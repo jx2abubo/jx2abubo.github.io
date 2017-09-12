@@ -79,7 +79,6 @@ $(document).ready(function() {
 	$currentProjDesc.children("h3").html(currentProjPage[key]["name"]);
 	$currentProjDesc.children("a").attr("href", currentProjPage[key]["link"]);
 	$currentProjDesc.children("a").html(currentProjPage[key]["linkText"]);
-	console.log($currentProjDesc);
 	$projectSelect.show();
 	
   });
@@ -666,7 +665,7 @@ $(document).ready(function() {
   
   var project1 = {
     Lampshade: {
-      image: "http://i347.photobucket.com/albums/p460/jx2bandito/lampshadeSS_zpsgujpnykj.png",
+      image: "https://i347.photobucket.com/albums/p460/jx2bandito/lampshadeSS_zpsgujpnykj.png",
       name: "Lampshade Hangers Co.",
       description:
         "A mock website. I wanted to create yet another project that looked like a standard webpage, but I also wanted to experiment with scroll-activated animation using GSAP and ScrollMagic. The shopping page features a simple two-way binding and a sorting option for the listed lampshades using jQuery.",
@@ -675,7 +674,7 @@ $(document).ready(function() {
       altText: "Screenshot of the Lampshade Hangers Co. website"
     },
     Sanic: {
-      image: "http://i347.photobucket.com/albums/p460/jx2bandito/sanicSS_zpsbzsqlfpg.png",
+      image: "https://i347.photobucket.com/albums/p460/jx2bandito/sanicSS_zpsbzsqlfpg.png",
       name: "Super Sanic Hegebros GSAP",
       description:
         "I made this short animation clip after taking an interest in SVG and GreenSock Animation Platform. It's a mash-up of Sanic, an intentionally poorly-drawn version of Sonic the Hedgehog, and a re-imagined version of the Super Mario Bros. opening background. The SVG elements were made using Method Draw, with the exception of Sanic. The animation is controlled via keyboard so there is no mobile support for this particular version of this project.",
@@ -684,7 +683,7 @@ $(document).ready(function() {
       altText: "Screenshot of my Sanic GSAP project"
     },
     Taco: {
-      image: "http://i347.photobucket.com/albums/p460/jx2bandito/TacoSS_zpsil0pdxj7.png",
+      image: "https://i347.photobucket.com/albums/p460/jx2bandito/TacoSS_zpsil0pdxj7.png",
       name: "Tacoholics Anonymous",
       description:
         "A mock page for a support group promising to help people whose lives are being ruined by their love of tacos. I made this web page after realizing that none of my projects looked like they belonged in an actual website. It's a responsive static web page featuring simple, clean design with subtle but effective use of white space. The featured scrolling effects are simple because I wanted to figure out how to implement them manually before using Scroll Magic JS. Looks best in Chrome.",
@@ -693,7 +692,7 @@ $(document).ready(function() {
       altText: "Screenshot of Tacoholics Anonymous"
     },
     Slide: {
-      image: "http://i347.photobucket.com/albums/p460/jx2bandito/slidePuzzleSS_zpsl27m0q5b.png",
+      image: "https://i347.photobucket.com/albums/p460/jx2bandito/slidePuzzleSS_zpsl27m0q5b.png",
       name: "Slide Puzzle",
       description:
         "The bomb is ticking and the only way to stop it is to solve the slide puzzle! I made this because my real life slide puzzle kept jamming. The game works by comparing the CSS positions of the slides. Tested in Chrome and Firefox.",
@@ -702,7 +701,7 @@ $(document).ready(function() {
       altText: "Screenshot of my slide puzzle"
     },
     Flirt: {
-      image: "http://i347.photobucket.com/albums/p460/jx2bandito/flirtSS_zps9sof1uov.png",
+      image: "https://i347.photobucket.com/albums/p460/jx2bandito/flirtSS_zps9sof1uov.png",
       name: "Flirting App",
       description:
         "A silly project I made in one day. The user is prompted to put their name, and then asked whether they love me. However, whenever they click 'No' the button switches places with 'Yes' and they end up clicking that instead. Based on a Valentines theme and somewhat satirical of modern love. Tested and made to be used by my phone.",
@@ -712,7 +711,7 @@ $(document).ready(function() {
       altText: "Screenshot of my flirting app"
     },
     Pizza: {
-      image: "http://i347.photobucket.com/albums/p460/jx2bandito/pizzaPositioner_zps7vewwjpe.png",
+      image: "https://i347.photobucket.com/albums/p460/jx2bandito/pizzaPositioner_zps7vewwjpe.png",
       name: "Pizza Positioner",
       description:
         "This page is meant to show what goes in my thought process as I work on a project. I include a JS function from my GitHub named 'dragAndPos'. With jQuery/jQuery UI included, it makes an element draggable, then outputs the CSS code showing the left and top positioning using percentages. Great for positioning CSS art by eye, or for figuring out the necessary pattern. Since the jQuery draggle function ignores margin and padding, those should be exxcluded from the relavant elements.",
