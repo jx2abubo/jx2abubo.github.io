@@ -664,6 +664,14 @@ $(document).ready(function() {
   }
   
   var project1 = {
+	Joel: {
+	  image: "screenshots/joelSS.png",
+	  name: "Joel's Adventure",
+	  description: "Joel's Adventure is a CYOA-like game I made to practice React JS. It also features some GSAP. The story is a work in progress but basically, you take the role of Joel, a penguin who finds himself in mysterious circumstances.",
+	  link: "/joelAdventure",
+	  linkText: "Play Joel's Adventure here!",
+	  altText: "Screenshot of Joel's Adventure"
+	},
     Lampshade: {
       image: "screenshots/lampshadeSS.png",
       name: "Lampshade Hangers Co.",
@@ -674,7 +682,7 @@ $(document).ready(function() {
       altText: "Screenshot of the Lampshade Hangers Co. website"
     },
     Sanic: {
-      image: "https://i347.photobucket.com/albums/p460/jx2bandito/sanicSS_zpsbzsqlfpg.png",
+      image: "screenshots/sanicSS.png",
       name: "Super Sanic Hegebros GSAP",
       description:
         "I made this short animation clip after taking an interest in SVG and GreenSock Animation Platform. It's a mash-up of Sanic, an intentionally poorly-drawn version of Sonic the Hedgehog, and a re-imagined version of the Super Mario Bros. opening background. The SVG elements were made using Method Draw, with the exception of Sanic. The animation is controlled via keyboard so there is no mobile support for this particular version of this project.",
@@ -683,7 +691,7 @@ $(document).ready(function() {
       altText: "Screenshot of my Sanic GSAP project"
     },
     Taco: {
-      image: "https://i347.photobucket.com/albums/p460/jx2bandito/TacoSS_zpsil0pdxj7.png",
+      image: "screenshots/tacoSS.png",
       name: "Tacoholics Anonymous",
       description:
         "A mock page for a support group promising to help people whose lives are being ruined by their love of tacos. I made this web page after realizing that none of my projects looked like they belonged in an actual website. It's a responsive static web page featuring simple, clean design with subtle but effective use of white space. The featured scrolling effects are simple because I wanted to figure out how to implement them manually before using Scroll Magic JS. Looks best in Chrome.",
@@ -692,7 +700,7 @@ $(document).ready(function() {
       altText: "Screenshot of Tacoholics Anonymous"
     },
     Slide: {
-      image: "https://i347.photobucket.com/albums/p460/jx2bandito/slidePuzzleSS_zpsl27m0q5b.png",
+      image: "screenshots/slidePuzzleSS.png",
       name: "Slide Puzzle",
       description:
         "The bomb is ticking and the only way to stop it is to solve the slide puzzle! I made this because my real life slide puzzle kept jamming. The game works by comparing the CSS positions of the slides. Tested in Chrome and Firefox.",
@@ -701,7 +709,7 @@ $(document).ready(function() {
       altText: "Screenshot of my slide puzzle"
     },
     Flirt: {
-      image: "https://i347.photobucket.com/albums/p460/jx2bandito/flirtSS_zps9sof1uov.png",
+      image: "screenshots/flirtSS.png",
       name: "Flirting App",
       description:
         "A silly project I made in one day. The user is prompted to put their name, and then asked whether they love me. However, whenever they click 'No' the button switches places with 'Yes' and they end up clicking that instead. Based on a Valentines theme and somewhat satirical of modern love. Tested and made to be used by my phone.",
@@ -709,22 +717,13 @@ $(document).ready(function() {
         "/flirtAlert",
       linkText: " View this flirtatious app here!",
       altText: "Screenshot of my flirting app"
-    },
-    Pizza: {
-      image: "https://i347.photobucket.com/albums/p460/jx2bandito/pizzaPositioner_zps7vewwjpe.png",
-      name: "Pizza Positioner",
-      description:
-        "This page is meant to show what goes in my thought process as I work on a project. I include a JS function from my GitHub named 'dragAndPos'. With jQuery/jQuery UI included, it makes an element draggable, then outputs the CSS code showing the left and top positioning using percentages. Great for positioning CSS art by eye, or for figuring out the necessary pattern. Since the jQuery draggle function ignores margin and padding, those should be exxcluded from the relavant elements.",
-      link: "https://codepen.io/jx2bandito/pen/GWVyOL",
-      linkText: " View the pen for this pepperoni pizza positioner here!",
-      altText: "Screenshot of my pizza positioner pen"
     }
   };
 
   
   var project2 = {
     Simon: {
-      image: "http://i347.photobucket.com/albums/p460/jx2bandito/SimonSaysSS_zpszhy3jcjw.png",
+      image: "screenshots/simonSaysSS.png",
       name: "Simon Game",
       description:
         "A Simon Says game with a twist. Strict resets the sequence upon choosing the wrong button, and Nightmare mode removes colors and occasionally shuffles the game. Activate both for a trial harder than Dark Souls(maybe)!",
@@ -733,7 +732,7 @@ $(document).ready(function() {
       altText: "A screenshot of my Simon game"
     },
     Quote: {
-      "image": "http://i347.photobucket.com/albums/p460/jx2bandito/quoteReduxSS_zpscokfmgyc.png",
+      "image": "screenshots/quoteReduxSS.png",
       "name": "Random Quote Generator",
       "description": "A quote generator. While it seems to be random, it is not truly random; no quote will be repeated unless the other quotes have already been shown, in which case a new random cycle is begun. Comes with a Twitter button.",
       "link": "http://s.codepen.io/jx2bandito/debug/evjGVX",
@@ -743,7 +742,7 @@ $(document).ready(function() {
     ,
     Tic: {
       image:
-        "http://i347.photobucket.com/albums/p460/jx2bandito/TicTacToe_zps0xmr63yr.png",
+        "screenshots/ticTacToeSS.png",
       name: "Tic-Tac-Toe",
       description:
         "Robots have rebelled and the only way to stop them is to beat them in Tic-Tac-Toe! Practice by playing against a fellow human, or face 3 robots leaders who may or may not be based on other fictional robots.",
@@ -752,7 +751,7 @@ $(document).ready(function() {
       altText: "A screenshot of my Tic-Tac-Toe main menu"
     },
     Twitch: {
-      image: "http://i347.photobucket.com/albums/p460/jx2bandito/TwitchSS_zps7vdb0i1m.png",
+      image: "screenshots/twitchSS.png",
       name: "Twitch Viewer",
       description:
         "This page uses the Twitch.tv API to see whether streamers are online or offline. Going beyond the suggested requirements from FreeCodeCamp.com, I included a button that removes streamers from the list and added the function to include additional streamers. Works perfectly but due for refactoring.",
@@ -761,7 +760,7 @@ $(document).ready(function() {
     },
     Wiki: {
       image:
-        "http://i347.photobucket.com/albums/p460/jx2bandito/WikipediaSS_zpsugclrzpo.png",
+        "screenshots/wikipediaSS.png",
       name: "Wikipedia Viewer",
       description:
         "A simple Wikipedia viewer. Uses JavaScript to access Wikipedia API and displays the results on the page. CSS-wise, this project was my introduction to creating elements that changed color on hover.",
@@ -771,7 +770,7 @@ $(document).ready(function() {
     },
     Calc: {
       image:
-        "http://i347.photobucket.com/albums/p460/jx2bandito/CalculatorSS_zps2djg6rgu.png",
+        "screenshots/calculatorSS.png",
       name: "Calculator",
       description:
         "A calculator powered by JavaScript. This project  helped me learn how to create an image with just simple CSS shapes. It was also my first venture into making buttons actually feel like buttons by changing their CSS properties on click.",
