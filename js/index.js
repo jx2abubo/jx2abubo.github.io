@@ -77,8 +77,9 @@ $(document).ready(function() {
 	$currentProjDesc.children("h3").html(currentProjPage[key]["name"]);
 	$currentProjDesc.children("p").html(currentProjPage[key]["description"]);
 	$currentProjDesc.children("h3").html(currentProjPage[key]["name"]);
-	$currentProjDesc.children("a").attr("href", currentProjPage[key]["link"]);
-	$currentProjDesc.children("a").html(currentProjPage[key]["linkText"]);
+	$currentProjDesc.children(".webLink").attr("href", currentProjPage[key]["link"]);
+	$currentProjDesc.children(".webLink").html(currentProjPage[key]["linkText"]);
+	$currentProjDesc.children(".codeLink").attr("href", currentProjPage[key]["repoLink"]);
 	$projectSelect.show();
 	
   });
@@ -670,7 +671,8 @@ $(document).ready(function() {
 	  description: "Joel's Adventure is a CYOA-like game I made to practice React JS. It also features some GSAP. The story is a work in progress but basically, you take the role of Joel, a penguin who finds himself in mysterious circumstances.",
 	  link: "/joelAdventure",
 	  linkText: "Play Joel's Adventure here!",
-	  altText: "Screenshot of Joel's Adventure"
+	  altText: "Screenshot of Joel's Adventure",
+	  repoLink: "https://github.com/jx2bandito/jVenture"
 	},
     Lampshade: {
       image: "screenshots/lampshadeSS.png",
@@ -679,7 +681,8 @@ $(document).ready(function() {
         "A mock website. I wanted to create yet another project that looked like a standard webpage, but I also wanted to experiment with scroll-activated animation using GSAP and ScrollMagic. The shopping page features a simple two-way binding and a sorting option for the listed lampshades using jQuery.",
       link: "/lampshadeHangers",
       linkText: " Illuminate your life with Lampshade Hangers Co. here!",
-      altText: "Screenshot of the Lampshade Hangers Co. website"
+      altText: "Screenshot of the Lampshade Hangers Co. website",
+	  repoLink: "https://github.com/jx2bandito/lampshadeHangers"
     },
     Sanic: {
       image: "screenshots/sanicSS.png",
@@ -688,7 +691,8 @@ $(document).ready(function() {
         "I made this short animation clip after taking an interest in SVG and GreenSock Animation Platform. It's a mash-up of Sanic, an intentionally poorly-drawn version of Sonic the Hedgehog, and a re-imagined version of the Super Mario Bros. opening background. The SVG elements were made using Method Draw, with the exception of Sanic. The animation is controlled via keyboard so there is no mobile support for this particular version of this project.",
       link: "/superSanic",
       linkText: " Watch Sanic get lost here!",
-      altText: "Screenshot of my Sanic GSAP project"
+      altText: "Screenshot of my Sanic GSAP project",
+	  repoLink: "https://github.com/jx2bandito/superSanic"
     },
     Taco: {
       image: "screenshots/tacoSS.png",
@@ -697,7 +701,8 @@ $(document).ready(function() {
         "A mock page for a support group promising to help people whose lives are being ruined by their love of tacos. I made this web page after realizing that none of my projects looked like they belonged in an actual website. It's a responsive static web page featuring simple, clean design with subtle but effective use of white space. The featured scrolling effects are simple because I wanted to figure out how to implement them manually before using Scroll Magic JS. Looks best in Chrome.",
       link: "/tacoholicsAnonymous",
       linkText: " Cure your taco addiction here!",
-      altText: "Screenshot of Tacoholics Anonymous"
+      altText: "Screenshot of Tacoholics Anonymous",
+	  repoLink: "https://github.com/jx2bandito/tacoholicsAnonymous"
     },
     Slide: {
       image: "screenshots/slidePuzzleSS.png",
@@ -706,7 +711,8 @@ $(document).ready(function() {
         "The bomb is ticking and the only way to stop it is to solve the slide puzzle! I made this because my real life slide puzzle kept jamming. The game works by comparing the CSS positions of the slides. Tested in Chrome and Firefox.",
       link: "/slidePuzzle",
       linkText: " Slide away here!",
-      altText: "Screenshot of my slide puzzle"
+      altText: "Screenshot of my slide puzzle",
+	  repoLink: "https://github.com/jx2bandito/slidePuzzle"
     },
     Flirt: {
       image: "screenshots/flirtSS.png",
@@ -716,7 +722,8 @@ $(document).ready(function() {
       link:
         "/flirtAlert",
       linkText: " View this flirtatious app here!",
-      altText: "Screenshot of my flirting app"
+      altText: "Screenshot of my flirting app",
+	  repoLink: "https://github.com/jx2bandito/flirtAlert"
     }
   };
 
@@ -729,15 +736,17 @@ $(document).ready(function() {
         "A Simon Says game with a twist. Strict resets the sequence upon choosing the wrong button, and Nightmare mode removes colors and occasionally shuffles the game. Activate both for a trial harder than Dark Souls(maybe)!",
       link: "/simonSays",
       linkText: "Challenge Simon here!",
-      altText: "A screenshot of my Simon game"
+      altText: "A screenshot of my Simon game",
+	  repoLink: "https://github.com/jx2bandito/simonSays"
     },
     Quote: {
-      "image": "screenshots/quoteReduxSS.png",
-      "name": "Random Quote Generator",
-      "description": "A quote generator. While it seems to be random, it is not truly random; no quote will be repeated unless the other quotes have already been shown, in which case a new random cycle is begun. Comes with a Twitter button.",
-      "link": "/quoteMachine",
-      "linkText": " View the quote machine here!",
-      altText: "A screenshot of my random quote generator"
+      image: "screenshots/quoteReduxSS.png",
+      name: "Random Quote Generator",
+      description: "A quote generator. While it seems to be random, it is not truly random; no quote will be repeated unless the other quotes have already been shown, in which case a new random cycle is begun. Comes with a Twitter button.",
+      link: "/quoteMachine",
+      linkText: " View the quote machine here!",
+      altText: "A screenshot of my random quote generator",
+	  repoLink: "https://github.com/jx2bandito/quoteMachine"
     }
     ,
     Tic: {
@@ -748,7 +757,8 @@ $(document).ready(function() {
         "Robots have rebelled and the only way to stop them is to beat them in Tic-Tac-Toe! Practice by playing against a fellow human, or face 3 robots leaders who may or may not be based on other fictional robots.",
       link: "/ticTac",
       linkText: " Quell their rebellion here!",
-      altText: "A screenshot of my Tic-Tac-Toe main menu"
+      altText: "A screenshot of my Tic-Tac-Toe main menu",
+	  repoLink: "https://github.com/jx2bandito/ticTac"
     },
     Twitch: {
       image: "screenshots/twitchSS.png",
@@ -756,7 +766,8 @@ $(document).ready(function() {
       description:
         "This page uses the Twitch.tv API to see whether streamers are online or offline. Going beyond the suggested requirements from FreeCodeCamp.com, I included a button that removes streamers from the list and added the function to include additional streamers. Works perfectly but due for refactoring.",
       link: "/twitchAPI",
-      linkText: "Check out the Twitch streamers here!"
+      linkText: "Check out the Twitch streamers here!",
+	  repoLink: "https://github.com/jx2bandito/twitchAPI"
     },
     Wiki: {
       image:
@@ -766,7 +777,8 @@ $(document).ready(function() {
         "A simple Wikipedia viewer. Uses JavaScript to access Wikipedia API and displays the results on the page. CSS-wise, this project was my introduction to creating elements that changed color on hover.",
       link: "/wikiAPI",
       linkText: " Explore the net's largest encyclopedia here!",
-      altText: "A screenshot of my Wikipedia searcher"
+      altText: "A screenshot of my Wikipedia searcher",
+	  repoLink: "https://github.com/jx2bandito/wikiAPI"
     },
     Calc: {
       image:
@@ -776,7 +788,8 @@ $(document).ready(function() {
         "A calculator powered by JavaScript. This project  helped me learn how to create an image with just simple CSS shapes. It was also my first venture into making buttons actually feel like buttons by changing their CSS properties on click.",
       link: "/calculator",
       linkText: "Calculate stuff here!",
-      altText: "A screenshot of my JS Calculator"
+      altText: "A screenshot of my JS Calculator",
+	  repoLink: "https://github.com/jx2bandito/Calculator"
     }
   }
 
