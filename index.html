@@ -82,29 +82,29 @@
         <canvas id=doodle1></canvas>
         <p>
           <div id=homePage>
-
             <div id=messageBox class=jumbotron>
               <button id=replay class="btn-xs">Replay Animation</button>
               <div id=leftShutter></div>
               <div id=rightShutter></div>
-              <h1 id=homeMessage>Aspiring <span id=ninja>ninja</span> front-end  developer on a mission to: <br>
-        <span class=row>
+              <h1 id=homeMessage>
+				<span class="firstMessage">Aspiring <span id=ninja>ninja</span> front-end  developer on a mission to: <br>
+				</span>
+				<span class=row>
                     <span class=col-xs-12>
-      <span id=challenge>Tackle&nbsp;challenges</span>
-          </span>
-                  <span class=col-xs-12>
-          <span><span id=inno>Inno</span><span id=vate>vate&nbsp;&nbsp;</span></span>
-          </span>
-          
-          <span class=col-xs-12>
-        <span id=learn>&nbsp;&nbsp;&nbsp;</span>
-            <span id=sideCaret>&#171;</span>
-          </span>
-                </span>
-
-
-          </h1></div>
-
+						<span id=challenge>Tackle&nbsp;challenges</span>
+					</span>
+					<span class=col-xs-12>
+						<span>
+						<span id=inno>Inno</span><span id=vate>vate&nbsp;&nbsp;</span>
+						</span>
+					</span>
+					<span class=col-xs-12>
+						<span id=learn>&nbsp;&nbsp;&nbsp;</span>
+						<span id=sideCaret>&#171;</span>
+					</span>
+			    </span>
+			</h1>
+			</div>
           </div>
       </div>
 
@@ -113,16 +113,16 @@
         <div id=projectPage>
           <canvas id=doodle2></canvas>
           <h1 class=pageH>Personal Projects</h1>
-		  <div class="imageBox projectSelect">
-			<img class="img-responsive" src="#">
-			<div class="projDesc projDesc1">
+          <div class="imageBox projectSelect">
+            <img class="img-responsive" src="#">
+            <div class="projDesc projDesc1">
               <h3>` + project.name  + `</h3>
               <p>` + project.description +`<br></p>
-			  <a class="webLink" href=` + project.link + ` style="text-decoration: underline; font-weight: bold;" target="_blank">` + project.linkText + `</a>
-			  <br>
-			  <a class="codeLink" href=` + project.repoLink + ` style="text-decoration: underline; font-weight: bold;" target="_blank">Or view the repo here!</a>
+              <a class="webLink" href=` + project.link + ` style="text-decoration: underline; font-weight: bold;" target="_blank">` + project.linkText + `</a>
+              <br>
+              <a class="codeLink" href=` + project.repoLink + ` style="text-decoration: underline; font-weight: bold;" target="_blank">Or view the repo here!</a>
             </div>
-		  </div>
+          </div>
           <!-- <div class='imageBox'>
             <img alt=` + project.altText + ` src=` + project.image + ` class=img-responsive>
             <div class=projDesc>
@@ -168,15 +168,15 @@
         <div id=projectPage2>
           <canvas id=doodle5></canvas>
           <h1 class=pageH>FreeCodeCamp Projects</h1>
-		  <div class="imageBox projectSelect">
-			<img class="img-responsive" src="#">
-			<div class="projDesc projDesc2">
+          <div class="imageBox projectSelect">
+            <img class="img-responsive" src="#">
+            <div class="projDesc projDesc2">
               <h3>` + project.name  + `</h3>
               <p>` + project.description +`<br></p>
-			  <a class="webLink" href=` + project.link + ` style="text-decoration: underline; font-weight: bold;" target="_blank">` + project.linkText + `</a>
-			  <br>
-			  <a class="codeLink" href=` + project.repoLink + ` style="text-decoration: underline; font-weight: bold;" target="_blank">Or view the repo here!</a></div>
-		  </div>
+              <a class="webLink" href=` + project.link + ` style="text-decoration: underline; font-weight: bold;" target="_blank">` + project.linkText + `</a>
+              <br>
+              <a class="codeLink" href=` + project.repoLink + ` style="text-decoration: underline; font-weight: bold;" target="_blank">Or view the repo here!</a></div>
+          </div>
         </div>
 
       </div>

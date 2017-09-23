@@ -18,10 +18,6 @@ p {
   font-size: 1em;
 }
 
-#nerdragon {
-  width: 20%;
-  height: 20%;
-}
 
 h1 {
   font-size: 1.5em;
@@ -185,6 +181,21 @@ h1 {
   animation: fadeIn 2s forwards;
   color: black;
   display: none;
+}
+
+.firstMessage{
+	visibility: hidden;
+	animation: showUp .2s forwards;
+	animation-delay: .5s;
+}
+
+@keyframes showUp{
+	0% {
+		visibility: hidden;
+	}
+	100%{
+		visibility: initial;
+	}
 }
 
 @-webkit-keyframes fadeIn {
