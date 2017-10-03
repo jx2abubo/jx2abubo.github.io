@@ -578,8 +578,10 @@ img {
 }
 
 .projectSelect p {
-  padding-left: 3vmax;
-  padding-right: 3vmax;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  width: 100%;
+  display: block;
 }
 
 .projectSelect img {
@@ -609,7 +611,9 @@ a {
 
 .projDesc {
   position: relative;
-  font-size: 1.5vmax;
+  font-size: calc(10px + .5vw);
+  width: 50%;
+  display: inline-block;
 }
 
 .pageH {
@@ -1074,7 +1078,7 @@ canvas {
     display: block;
   }
   .projDesc {
-    font-size: 2vmax;
+    font-size: 3vw;
   }
   #pleaseNav {
     display: none;
