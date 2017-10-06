@@ -558,7 +558,7 @@ $(document).ready(function() {
     $(document).on("mousemove touchmove", function(e) {
       magnetCounter += 1;
 
-      if (magnetCounter < 20) {
+      if (magnetCounter < 10) {
         return false;
       }
 
