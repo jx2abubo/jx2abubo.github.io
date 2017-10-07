@@ -668,7 +668,7 @@ $(document).ready(function() {
 	Robot: {
 	  image: "screenshots/robotSS.png",
 	  name: "ModulaRobot",
-	  description: "Having realized that TicTacToe is a silly way to wage war on the evil the robots, the Resistance decides to build robots of their own! This project is a work in progress. In the spirit of modularity, I wanted to make a robot builder app. The user can choose which part they want to build, which will then assemble piece by piece. This project uses React but unlike Joel's Adventure, it uses SCSS instead of inline-styling, and is overall more organized.",
+	  description: "Having realized that TicTacToe is a silly way to wage war on the evil robots, the Resistance decides to build robots of their own! This project is a work in progress. In the spirit of modularity, I wanted to make a robot builder app. The user can choose which part they want to build, which will then assemble piece by piece. This project uses React but unlike Joel's Adventure, it uses SCSS instead of inline-styling, and is overall more organized.",
 	  link: "/robotBuilder",
 	  linkText: "Built your robot parts here!",
 	  altText: "Screenshot of ModulaRobot",
