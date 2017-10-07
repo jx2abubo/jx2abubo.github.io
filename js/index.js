@@ -665,6 +665,15 @@ $(document).ready(function() {
   }
   
   var project1 = {
+	Robot: {
+	  image: "screenshots/robotSS.png",
+	  name: "ModulaRobot",
+	  description: "Having realized that TicTacToe is a silly way to wage war on the evil the robots, the Resistance decides to build robots of their own! This project is a work in progress. In the spirit of modularity, I wanted to make a robot builder app. The user can choose which part they want to build, which will then assemble piece by piece. This project uses React but unlike Joel's Adventure, it uses SCSS instead of inline-styling, and is overall more organized.",
+	  link: "/robotBuilder",
+	  linkText: "Built your robot parts here!",
+	  altText: "Screenshot of ModulaRobot",
+	  repoLink: "https://github.com/jx2bandito/robotBuilder"
+	},
 	Joel: {
 	  image: "screenshots/joelSS.png",
 	  name: "Joel's Adventure",
@@ -713,17 +722,6 @@ $(document).ready(function() {
       linkText: " Slide away here!",
       altText: "Screenshot of my slide puzzle",
 	  repoLink: "https://github.com/jx2bandito/slidePuzzle"
-    },
-    Flirt: {
-      image: "screenshots/flirtSS.png",
-      name: "Flirting App",
-      description:
-        "A silly project I made in one day. The user is prompted to put their name, and then asked whether they love me. However, whenever they click 'No' the button switches places with 'Yes' and they end up clicking that instead. Based on a Valentines theme and somewhat satirical of modern love. Tested and made to be used by my phone.",
-      link:
-        "/flirtAlert",
-      linkText: " View this flirtatious app here!",
-      altText: "Screenshot of my flirting app",
-	  repoLink: "https://github.com/jx2bandito/flirtAlert"
     }
   };
 
