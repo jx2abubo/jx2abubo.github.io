@@ -687,6 +687,7 @@ $(document).ready(function() {
       image: "screenshots/lampshadeSS.png",
       name: "Lampshade Hangers Co.",
       description:
+        "A mock website. I wanted to create yet another project that looked like a standard webpage, but I also wanted to experiment with scroll-activated animation using GSAP and ScrollMagic. In the end, I decided that manual scrolling can be very unpredictable and confusing for users, so I set overflow to hidden and delegated the scrolling to the navigation bar buttons. The shopping page features a simple two-way binding and a sorting option for the listed lampshades using jQuery.",
       link: "/lampshadeHangers",
       linkText: " Illuminate your life with Lampshade Hangers Co. here!",
       altText: "Screenshot of the Lampshade Hangers Co. website",
