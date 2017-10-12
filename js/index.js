@@ -719,7 +719,7 @@ $(document).ready(function() {
       description:
         "The bomb is ticking and the only way to stop it is to solve the slide puzzle! I made this because my real life slide puzzle kept jamming. The game works by comparing the CSS positions of the slides. Tested in Chrome and Firefox.",
       link: "/slidePuzzle",
-      linkText: " Slide away here!",
+      linkText: " Defuse the slide puzzle here!",
       altText: "Screenshot of my slide puzzle",
 	  repoLink: "https://github.com/jx2bandito/slidePuzzle"
     }
